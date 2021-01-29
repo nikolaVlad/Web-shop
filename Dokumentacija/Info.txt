@@ -1,0 +1,43 @@
+Rute :
+
+	#) Početna (Novo)
+
+	#) O nama
+	#) Kontakt
+
+	#) Uloguj se
+	#) Registruj se (Novi profil)
+
+
+	#) Moj profil
+	#) Izmena profila
+	#) Brisanje profila
+
+	#) Sve kategorije ( SHOP ) 
+	#) Kategorija 
+	#) Nova kategorija
+	#) Izmena kategorije
+	#) Brisanje kategorije
+
+
+	#) Proizvod
+	#) Proizvodi
+	#) Novi proizvod
+		- Informacije o proizvodu
+		- Slike proizvoda
+
+	#) Izmena proizvoda
+		- Informacije o proizvodu
+		- Slike proizvoda
+
+	#) Brisanje proizvoda
+
+
+	# Korpa
+	# Dodaj proizvod
+	# Ukloni proizvod
+	# Naruči
+
+		
+
+ 
