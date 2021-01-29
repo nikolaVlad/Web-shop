@@ -21,8 +21,57 @@ body
     background-color: #464646;
 
     /* End Slika pozadine  --------------------------*/
+}
 
 
 
+
+/* ? Navigacija */
+
+.navbar-nav
+{
+   font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+
+.active 
+{
+   
+   border-bottom: 1.6px solid ;
+}
+
+/* Stavka iz menija */
+.nav-link:hover
+{ 
+   
+}
+
+
+/* Izbor kategorija iz itemsa - shop */
+.shop-menu 
+{
+   background-color: rgb(109, 109, 109);
+   padding: 20px;
+}
+
+.shop-menu a
+{
+   color: rgb(255, 255, 255);
+   
+}
+
+
+.pretrazi-polje
+{
+   background-color: rgb(173, 173, 173);
+   font-family: inherit;
+  
+   border: 0;
+   border-bottom: 2px solid gray;
+   outline: 1px;
+   color: rgb(61, 61, 61);
+   margin-top: -3px;
+   background: transparent;
+   width : 150px;
 
 }

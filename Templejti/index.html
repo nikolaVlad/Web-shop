@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link rel = 'stylesheet' href='./static/bootstrap/css/bootstrap.min.css'>
+    <!--FontAwesome ikonice-->
+    <link rel = 'stylesheet' href='./static/fontawesome/css/all.min.css'>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="./static/style.css">
+
+    <!--Title-->
+    <title>Templejt</title>
+</head>
+<body>
+   
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light mt-4 ">
+            <!-- Kontejner navigacije -->
+            <div class="container-fluid">
+                
+
+                <!-- Logo -->
+                <div class="col row">
+                        <a class="navbar-brand mb-2" href="#">Logo</a>
+                    <!-- Pretraživanje  -->
+                    <form class="form-inline   ">
+                        <i class="fas fa-search" style="cursor: pointer; " onclick="showShearchBar()"></i>
+                        <input type="text" class="ml-2 pretrazi-polje" id = 'shearchBar' style="display: none;">
+                    </form>
+                    <!-- /Pretraživanje  -->
+
+                </div>
+                <!-- /Logo -->
+                
+               
+
+
+
+                
+
+                <!-- Ostali deo menija -->
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                    <!-- Items -->
+                    <ul class="navbar-nav mr-auto">
+
+                        <!-- Novo -->
+                        <li class="nav-item active ">
+                            <a class="nav-link " href="#"> Novo </a> 
+                        </li>
+
+                     
+                        <!-- Kategorije ( SHOP )-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Shop
+                            </a>
+                            <div class="dropdown-menu shop-menu  text-white" aria-labelledby="navbarDropdown">
+                               <div class = "">
+                                   <a href = "">kategorija 1</a> <br> 
+                                   <a href = "" >kategorija 1</a> <br> 
+
+                               </div>
+                            </div>
+                        </li>
+                        <!-- /Kategorije ( SHOP )-->
+
+                        <!-- O nama -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">O nama</a> 
+                        </li>
+
+                        <!-- Kontakt -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontakt</a> 
+                        </li>
+
+
+                        <span class="ml-5"></span>
+
+
+                        <!-- Uloguj se -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Uloguj se</a> 
+                        </li>
+
+                        <!-- Registruj se -->
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="#" >Registruj se</a> 
+                        </li>
+
+
+
+
+
+                    </ul>
+
+                   
+
+
+
+
+                    <!-- /Items -->
+
+                   
+
+
+                   
+
+
+
+                </div>
+                <!-- Ostali deo menija -->
+
+                 <!-- Profil -->
+                 <i class="far fa-user mr-3"></i>
+                 <!-- /Profil -->
+
+
+                 <!-- Korpa -->
+                     <i class="fas fa-shopping-cart mr-3"></i>
+                 <!-- /Korpa -->
+
+                
+                <!-- Button za responzivnost -->
+               
+                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon btn btn-sm " ></span>
+                </button>
+               
+                <!-- Button za responzivnost -->
+
+            </div>
+            <!-- /Kontejner navigacije -->
+        </nav>
+    <!-- /Navigation -->
+
+
+
+
+    
+
+
+<!--Js fajlovi-------------------------------------------------------------------------------------------------------------------->
+    <!--Jquery-->
+    <script type="text/javascript" src="/Templejti/static/jquery.js"></script>
+    <!--Bootstrap-->
+    <script type="text/javascript" src="./static/bootstrap/js/bootstrap.min.js"></script>
+    <!--FontAwesome-->
+    <script type="text/javascript" src="./static/fontawesome/js/all.min.js"></script>
+    <!--Custom JS-->
+    <script type="text/javascript" src="/Templejti/static/script.js"></script>
+</body>
+</html>
