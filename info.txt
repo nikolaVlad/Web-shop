@@ -1,4 +1,0 @@
-  29.01
-    #Templejti1
-    - Dodat početni html templejt
-    s
