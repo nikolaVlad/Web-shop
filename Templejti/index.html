@@ -15,27 +15,37 @@
     <!--Title-->
     <title>Templejt</title>
 </head>
+
+
 <body>
    
 
     <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light mt-4 ">
+        <nav class="navbar navbar-expand-lg navbar-light mt-2 ">
             <!-- Kontejner navigacije -->
             <div class="container-fluid">
                 
 
                 <!-- Logo -->
-                <div class="col row">
+                <div class="col-sm-12 col-lg-2  text-center ">
                         <a class="navbar-brand mb-2" href="#">Logo</a>
-                    <!-- Pretraživanje  -->
-                    <form class="form-inline   ">
-                        <i class="fas fa-search" style="cursor: pointer; " onclick="showShearchBar()"></i>
-                        <input type="text" class="ml-2 pretrazi-polje" id = 'shearchBar' style="display: none;">
-                    </form>
-                    <!-- /Pretraživanje  -->
-
                 </div>
                 <!-- /Logo -->
+
+                <!-- Pretraživanje  -->
+                <div class="col-lg-3 col-sm-12 d-flex justify-content-center ">
+                    
+                     <form class="form-inline" action="/sdsa" method="get">
+                      
+                        <div class="d-flex">
+                            <button type="submit" class="noBorder"> <i class="fas fa-search mt-2"></i> </button>
+                            <input type="search" placeholder="Pretražite..." class=" pretrazi-polje ml-2"  id = 'shearchBar' >
+                        
+                        </div>
+                    </form>
+                </div>
+                <!-- /Pretraživanje  -->
+               
                 
                
 
@@ -44,7 +54,7 @@
                 
 
                 <!-- Ostali deo menija -->
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <!-- Items -->
                     <ul class="navbar-nav mr-auto">
@@ -57,16 +67,64 @@
                      
                         <!-- Kategorije ( SHOP )-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                            onmouseover="showShopMenu()"
+                            onmouseout="hideShopMenu()">
                                 Shop
                             </a>
-                            <div class="dropdown-menu shop-menu  text-white" aria-labelledby="navbarDropdown">
-                               <div class = "">
-                                   <a href = "">kategorija 1</a> <br> 
-                                   <a href = "" >kategorija 1</a> <br> 
 
-                               </div>
+
+                            <!-- Meni za izbor kategorije -->
+                            <div class="dropdown-menu shop-menu text-white" style="  display: none; " aria-labelledby="navbarDropdown" id = "shopMenu"
+                            onmouseover="showShopMenu()"
+                            onmouseout="hideShopMenu()"
+                            >
+
+                                <!-- Red sa kategorijama -->
+                                <div class="row pb-3">
+                                    <div class="col">
+                                        <a href = "#"> Aksesoari</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href = "#"> Duksevi </a>
+                                    </div><div class="col">
+                                        <a href = "#">Majice</a>
+                                    </div>
+                                </div>
+                                <!-- Red sa kategorijama -->
+
+                                 <!-- Red sa kategorijama -->
+                                 <div class="row pb-3">
+                                    <div class="col">
+                                        <a href = "#"> Kape</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href = "#"> Jakne </a>
+                                    </div><div class="col">
+                                        <a href = "#">Šalovi</a>
+                                    </div>
+                                </div>
+                                <!-- Red sa kategorijama -->
+
+                                 <!-- Red sa kategorijama -->
+                                 <div class="row pb-3">
+                                    <div class="col">
+                                        <a href = "#"> Naočare</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href = "#"> Narukvice </a>
+                                    </div><div class="col">
+                                        <a href = "#">Prstenje</a>
+                                    </div>
+                                </div>
+                                <!-- Red sa kategorijama -->
+
+
                             </div>
+                            <!-- Meni za izbor kategorije -->
+                
+
+
                         </li>
                         <!-- /Kategorije ( SHOP )-->
 
@@ -86,54 +144,213 @@
 
                         <!-- Uloguj se -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Uloguj se</a> 
+                            
+                            <!-- Form -->
+                            <form action="#" method="POST">
+                                <span class="nav-link noBorder " type="button" 
+                                data-toggle="modal" data-target="#logInModal"
+                                >Uloguj se</span>
+
+
+                                <!-- Modal -->
+                                    <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+
+                                                <h5 class="modal-title " id="exampleModalLongTitle">Prijavljivanje</h5>
+
+
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Email<br>
+                                                <input type="email" class="form-control">
+
+                                                <!-- Obavestene  -->
+                                                    <span class="text-danger small" hidden >Neispravna email adresa!</span>
+                                                <!-- /Obavestene  -->
+
+                                                <br>
+                                                Lozinka
+                                                <div class="d-flex">
+                                                    <input type="password" class="form-control" id = "pass">
+
+                                                  
+
+                                                    <!-- Prikaz/sakrij lozinku -->
+                                                        <span onclick="showHidePass()" style="position: static; margin-left: -24px; margin-top: 7px; cursor: pointer;"><i class="fas fa-eye text-info" ></i></span>
+                                                    <!-- /Prikaz/sakrij lozinku -->
+                                                    
+                                                </div>
+
+                                                <!-- Obavestene  -->
+                                                    <span class="text-danger small" hidden>Neispravna lozinka!</span><br>
+                                                <!-- /Obavestene  -->
+
+                                                <span class="mt-2 text-primary" style="cursor: pointer;">  Zaboravio/la sam lozinku...</span>
+                                            </div>
+                                            <div class="modal-footer">
+                                            
+                                            <button type="submit" class="btn btn-primary" style="width: 100%;">Prijavi se</button>
+                                            
+                                            </div>
+                                            <div class="text-center mb-3">
+                                                <br>
+                                                Još nemate nalog <a href = "">Registrujte se!</a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                <!-- /Modal -->
+
+
+                            </form>
+                            <!-- /Form -->
+
                         </li>
+                        <!-- /Uloguj se -->
+
+
+
+
 
                         <!-- Registruj se -->
                         <li class="nav-item">
-                            <a class="nav-link text-info" href="#" >Registruj se</a> 
+                            <a href="/reg" class = "nav-link text-info" style="cursor: pointer;" > Registruj se</a>
                         </li>
+
+
 
 
 
 
 
                     </ul>
-
-                   
-
-
-
-
                     <!-- /Items -->
-
-                   
-
-
-                   
-
-
 
                 </div>
                 <!-- Ostali deo menija -->
 
-                 <!-- Profil -->
-                 <i class="far fa-user mr-3"></i>
-                 <!-- /Profil -->
-
-
-                 <!-- Korpa -->
-                     <i class="fas fa-shopping-cart mr-3"></i>
-                 <!-- /Korpa -->
-
-                
-                <!-- Button za responzivnost -->
+                  <!-- Button za responzivnost -->
                
-                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <button class="navbar-toggler mr-3"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon btn btn-sm " ></span>
                 </button>
                
                 <!-- Button za responzivnost -->
+
+
+
+
+
+
+                
+                    <!-- Profil -->
+                    <a href = "#" class="text-dark" ><i class="far fa-user mr-3"></i></a>
+                    <!-- /Profil -->
+
+                    <div class="d-flex dropdown show">
+
+                        <!-- Korpa -->
+                            <!-- Klik -->
+                                <a class="fas fa-shopping-cart mt-3 text-success" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></a> 
+                            <!-- /Klik -->
+                            
+                            <!-- Br predmeta u korpi -->
+                            <span class="badge badge-dark" style="margin-left: 0px; border-radius: 50px; margin-left: -4px; margin-bottom: 30px;" > 
+                                3  
+                            </span>
+                            <!-- /Br predmeta u korpi -->
+
+
+                            <!-- Meni korpe  -->
+                            <div class="dropdown-menu korpa-menu" style="padding: 5px; margin-left: -220px; margin-top: -10px; position: absolute; width: 250px;" aria-labelledby="dropdownMenuLink">
+                               
+                                <!-- Ukupno predmeta -->
+                                <div class="row">
+                                    <div class="col-sm-6"> Ukupno : </div>
+                                    <div class="col-sm-6 "><span class="text-danger"> 6000 </span> RSD</div>
+                               </div>
+                               <hr style="margin-left: 10px; margin-right: 10px;">
+                                <!-- /Ukupno predmeta -->
+                               
+
+                               
+                                        
+                                <!-- Izlistavanje predmeta -->
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <a href = '' class="text-info">Majica </a>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                      <span> 1800 </span> <span class="text-secondary">RSD</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!-- /Izlistavanje predmeta -->
+
+
+
+
+
+                                 <!-- Izlistavanje predmeta -->
+                                 <div class="row">
+                                    <div class="col-sm-6">
+                                        <a href = '' class="text-info">Duks</a>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                      <span> 3000 </span> <span class="text-secondary">RSD</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!-- /Izlistavanje predmeta -->
+
+
+
+
+
+                                 <!-- Izlistavanje predmeta -->
+                                 <div class="row">
+                                    <div class="col-sm-6">
+                                        <a href = '' class="text-info">Kapa</a>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                      <span>1200</span> <span class="text-secondary">RSD</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!-- /Izlistavanje predmeta -->
+                            
+                            
+                                <!-- Prikazi korpu -->
+                                    <div class="d-flex justify-content-center">
+                                        <a href = "" class="btn btn-outline-danger">Prikaži korpu</a>
+                                    </div>
+                                <!-- /Prikazi korpu -->
+
+
+                            
+                            </div>
+                            <!-- /Meni korpe  -->
+
+
+
+
+
+                        
+
+
+                    <!-- /Korpa -->
+                    </div>
+                   
+                
+              
 
             </div>
             <!-- /Kontejner navigacije -->
@@ -143,7 +360,305 @@
 
 
 
+
+
+
+
+    <!-- Slajder -->
+
+    <div class="container  " style="padding: 30px">
+
+        <!-- Slajdovi -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" 
+        onmouseover="showArticleInfo('infoArtikal1', 'infoArtikal2')"
+        onmouseout="hideArticleInfo('infoArtikal1', 'infoArtikal2')">
+            
+            <!-- Items -->
+            <div class="carousel-inner">
+              
+              
+
+             
+                <!-- ITEM 1-->
+                <div class="carousel-item active">
+
+                    <!-- Informacije -->
+                        <div class=" info-artikal " id = "infoArtikal1">
+                            <!-- Forma za dodavanje u korpi -->
+                            <form action = "#" method = "POST">
+
+                                <!-- Naziv artikla -->
+                                <div class="row">
+                                    <!--Nevidljivo polje za Id artikla -->
+                                        <input name = "id" value ="" hidden>
+                                    <!--Nevidljivo polje za Id artikla -->
+
+                                    <div class="col-12 text-center "> <b class="text-primary"> Nike airmax dux</b></div>
+                                </div> 
+                                <!-- /Naziv artikla-->
+
+                                <!-- Red 1--> 
+                                <div class="row">
+
+                                    <!-- Velicina -->
+                                    <div class="col-6 text-center">
+                                        Veličina : 
+                                        <div class="text-info">
+                                            <input type="radio" name = "velicina" value = "" > S
+                                            <input type="radio" name = "velicina" value = ""checked> M
+                                            <input type="radio" name = "velicina" value = ""> L
+                                            <input type="radio" name = "velicina" value = ""> XL
+                                        </div>
+                                    </div>
+                                    <!-- /Velicina -->
+
+
+
+                                    <!-- Boja -->
+                                    <div class="col-6 text-center">
+                                        Boja :  
+                                        <select class="form-select text-white" style="background-color: transparent; border: none;" name = "boja">
+                                            <option class="text-dark">Crvena</option>
+                                            <option class="text-dark">Crna</option>
+                                            <option class="text-dark">Zuta</option>
+                                        </select>
+                                    </div>
+                                    <!-- /Boja -->
+
+                                
+                                </div>
+                                <!-- /Red 1--> 
+
+
+
+                                <!-- Red 2-->
+                                <div class="row mt-2">
+
+                                    <!-- Pol -->
+                                    <div class="col-6 text-center">
+                                        Pol : <b class="text-info">Muški</b>
+                                    </div>
+                                     <!-- /Pol--> 
+
+
+                                    <!-- Cena -->
+                                    <div class="col-6 text-center">
+                                        Cena : <b class="text-info"> 3200 RSD</b>
+                                    </div>
+                                    <!-- /Cena -->
+
+                                </div>
+                                 <!-- /Red 2--> 
+
+                                 <div class="row mt-2">
+                                    <div class="col-6 text-center">
+                                        Količina : 
+                                        <input type="number" value="1" class="noBorder text-info " max="10" min="1" style="width: 40px;" >
+                                    </div>
+                                 </div>
+
+
+                                <!-- Red 3 Submit -->
+                                <div class="row mt-4">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-outline-info" style="width: 100%;"><i class="fas fa-shopping-cart"></i>
+                                             Dodaj u korpi 
+                                    </div>
+                                </div>
+                                <!-- /Red3 Submit-->
+
+
+                            </form>
+                            <!-- /Forma za dodavanje u korpi -->
+
+
+                        </div>
+                        <!-- /Informacije-->
+
+
+                        <!-- Slika artikla-->
+                            <img class="d-block w-100 slajd-item" src="/Templejti/static/img/Artikli/s3.jpg" alt="Third slide">
+                        <!-- /Slika artikla-->
+                        
+
+                </div>
+                <!-- /ITEM 1-->
+
+                  <!-- ITEM 1-->
+                  <div class="carousel-item">
+
+                    <!-- Informacije -->
+                        <div class=" info-artikal " id = "infoArtikal2">
+                            <!-- Forma za dodavanje u korpi -->
+                            <form action = "#" method = "POST">
+
+                                <!-- Naziv artikla -->
+                                <div class="row">
+                                    <!--Nevidljivo polje za Id artikla -->
+                                        <input name = "id" value ="" hidden>
+                                    <!--Nevidljivo polje za Id artikla -->
+
+                                    <div class="col-12 text-center "> <b class="text-primary"> Nike duks bez kapuljače</b></div>
+                                </div> 
+                                <!-- /Naziv artikla-->
+
+                                <!-- Red 1--> 
+                                <div class="row">
+
+                                    <!-- Velicina -->
+                                    <div class="col-6 text-center">
+                                        Veličina : 
+                                        <div class="text-info">
+                                            <input type="radio" name = "velicina" value = ""checked> M
+                                            <input type="radio" name = "velicina" value = ""> XL
+                                        </div>
+                                    </div>
+                                    <!-- /Velicina -->
+
+
+
+                                    <!-- Boja -->
+                                    <div class="col-6 text-center">
+                                        Boja :  
+                                        <select class="form-select text-white" style="background-color: transparent; border: none;" name = "boja">
+                                            <option class="text-dark">Žuta</option>
+                                            <option class="text-dark">Crna</option>
+                                        </select>
+                                    </div>
+                                    <!-- /Boja -->
+
+                                
+                                </div>
+                                <!-- /Red 1--> 
+
+
+
+                                <!-- Red 2-->
+                                <div class="row mt-2">
+
+                                    <!-- Pol -->
+                                    <div class="col-6 text-center">
+                                        Pol : <b class="text-info">Muški</b>
+                                    </div>
+                                     <!-- /Pol--> 
+
+
+                                    <!-- Cena -->
+                                    <div class="col-6 text-center">
+                                        Cena : <b class="text-info"> 3700 RSD</b>
+                                    </div>
+                                    <!-- /Cena -->
+
+                                </div>
+                                 <!-- /Red 2--> 
+
+                                 <div class="row mt-2">
+                                    <div class="col-6 text-center">
+                                        Količina : 
+                                        <input  type="number" value="1" class="noBorder text-info " max="10" min="1" style="width: 40px;" >
+                                    </div>
+                                 </div>
+
+
+                                <!-- Red 3 Submit -->
+                                <div class="row mt-4">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-outline-info" style="width: 100%; "><i class="fas fa-shopping-cart"></i>
+                                             Dodaj u korpi 
+                                    </div>
+                                </div>
+                                <!-- /Red3 Submit-->
+
+
+                            </form>
+                            <!-- /Forma za dodavanje u korpi -->
+
+
+                        </div>
+                        <!-- /Informacije-->
+
+
+                        <!-- Slika artikla-->
+                            <img class="d-block w-100 slajd-item" src="/Templejti/static/img/Artikli/s1.jpg" alt="Third slide">
+                        <!-- /Slika artikla-->
+                        
+
+                </div>
+                <!-- /ITEM 1-->
+
+
+                
+
+
+
+
+               
+                
+
+            
+             </div>
+             <!-- /Items-->
+
+            
+
+
+            <!-- Prethodna -->
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span aria-hidden="true"><i class="fas fa-chevron-circle-left text-dark"></i></span>
+            <span class="sr-only">Previousa</span>
+            </a>
+            <!-- /Prethodna -->
+
+
+            <!-- Sledeća -->
+            <a class="carousel-control-next " href="#carouselExampleControls" role="button" data-slide="next">
+            <span aria-hidden="true"><i class="fas fa-chevron-circle-right text-dark"></i></span>
+            <span class="sr-only ">Next</span>
+            </a>
+            <!-- /Sledeća -->
+
+
+
+        </div>
+        <!-- /Slajdovi -->
+
+
+    </div>
+
+    <!-- /Slajder -->
+
+
     
+    <!-- Footer -->
+    <div class=" footer">
+        <div class="container ">
+
+            <div class="row p-1">
+                <div class="col-lg-4 col-sm-12 text-center">
+                    mail@mail.com
+                </div>
+
+                <div class="col-lg-4 col-sm-12 text-center">
+                    Naziv sajta
+                </div>
+
+                <div class="col-lg-4 col-sm-12 text-center">
+                    <i class="fab fa-instagram" style="color: rgb(54, 0, 104);"></i>
+                    <i class="fab fa-facebook-messenger" style="color: rgb(0, 47, 100);"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+
+
+
+
+
+
 
 
 <!--Js fajlovi-------------------------------------------------------------------------------------------------------------------->

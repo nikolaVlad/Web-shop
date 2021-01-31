@@ -43,6 +43,10 @@ body
 /* Stavka iz menija */
 .nav-link:hover
 { 
+   background-color: rgba(122, 122, 122, 0.137);
+   border-radius: 10px;
+
+  
    
 }
 
@@ -50,15 +54,28 @@ body
 /* Izbor kategorija iz itemsa - shop */
 .shop-menu 
 {
-   background-color: rgb(109, 109, 109);
-   padding: 20px;
+   background-color: rgb(138, 135, 135);
+   padding-left: 20px;
+   width: 300px;
+   height: auto;
+   max-height: 300px;
+   overflow-x: hidden;
+
+ 
+   position: absolute; 
+   margin-top: -10px; 
+  
+   
 }
 
 .shop-menu a
 {
    color: rgb(255, 255, 255);
    
+   
 }
+
+
 
 
 .pretrazi-polje
@@ -70,8 +87,66 @@ body
    border-bottom: 2px solid gray;
    outline: 1px;
    color: rgb(61, 61, 61);
-   margin-top: -3px;
+   display: block;
    background: transparent;
-   width : 150px;
+   width : 230px;
+   
+}
 
+
+.noBorder
+{
+   border: none; 
+   background-color: transparent;
+}
+
+
+
+.korpa-menu
+{
+   background-color: rgba(255, 255, 255, 0.89);
+   box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.11);
+   border: none;
+   border-top: rgb(74, 165, 0) solid;
+   border-radius: 0px;
+   
+   /* Scroll */
+
+  
+   height: auto;
+   max-height: 300px;
+   overflow-x: hidden;
+}
+
+
+.slajd-item
+{
+   width : 200px;
+   height : 600px
+}
+
+.info-artikal
+{
+   /* position: none; */
+   position : absolute;
+   background-color: rgba(0, 0, 0, 0.74);
+   height:300px;
+   margin-top: 390px;
+   width: 100%;
+   padding: 10px;
+   color: white;
+   overflow: auto;
+   overflow-x: hidden;
+}
+
+
+.footer
+{
+   position: relative;
+   height: 40px;
+   width:100%;
+   margin-top: 10px;
+   border-top: rgba(102, 102, 102, 0.534) 2px solid;
+   padding-left: 30px;
+   color: rgb(255, 255, 255);
 }
