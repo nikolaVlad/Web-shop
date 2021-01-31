@@ -21,6 +21,7 @@ var showHideShop = () =>
 {
   
     var x = document.getElementById("shopMenu");
+    
     if (x.style.display === "none") {
      showShopMenu();
     } 

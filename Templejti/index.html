@@ -67,15 +67,17 @@
                      
                         <!-- Kategorije ( SHOP )-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                            <span class="nav-link dropdown-toggle"  id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                            onclick="showHideShop()"
                             onmouseover="showShopMenu()"
                             onmouseout="hideShopMenu()">
                                 Shop
-                            </a>
+                            </span>
 
 
                             <!-- Meni za izbor kategorije -->
                             <div class="dropdown-menu shop-menu text-white" style="  display: none; " aria-labelledby="navbarDropdown" id = "shopMenu"
+                            
                             onmouseover="showShopMenu()"
                             onmouseout="hideShopMenu()"
                             >
@@ -249,7 +251,19 @@
 
                 
                     <!-- Profil -->
-                    <a href = "#" class="text-dark" ><i class="far fa-user mr-3"></i></a>
+                    <div class="dropdown">
+
+                        <a class="noBorder text-dark" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">
+                            <i class="far fa-user mr-3"></i>
+                        </a>
+
+
+                        <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" style="margin-left: -105px; border-top:rgb(172, 172, 172) solid; box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.404);">
+                          <a class="dropdown-item" href="#">Moj profil</a>
+                         
+                          <a class="dropdown-item text-danger" href="#">Odjavi se</a>
+                        </div>
+                      </div>
                     <!-- /Profil -->
 
                     <div class="d-flex dropdown show">
@@ -366,7 +380,7 @@
 
     <!-- Slajder -->
 
-    <div class="container  " style="padding: 30px">
+    <div class="container " style="padding: 30px; padding-left: 12%; padding-right: 12%;  ">
 
         <!-- Slajdovi -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" 
@@ -484,7 +498,7 @@
                 </div>
                 <!-- /ITEM 1-->
 
-                  <!-- ITEM 1-->
+                  <!-- ITEM 2-->
                   <div class="carousel-item">
 
                     <!-- Informacije -->
@@ -584,7 +598,7 @@
                         
 
                 </div>
-                <!-- /ITEM 1-->
+                <!-- /ITEM 2-->
 
 
                 
@@ -628,7 +642,66 @@
     <!-- /Slajder -->
 
 
-    
+
+
+    <!-- Kartice  -->
+    <div class="container mt-3 mb-3">
+        <div class="row  ">
+
+            <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+
+                <div class="card  mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><i class="fas fa-exclamation-circle text-danger"></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Akcije</h5>
+                      <p class="card-text">
+                          Svakog dana akcije na sve artikle. Ne propustite ponudu.
+                      </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+                    
+                <div class="card  mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><i class="fas fa-truck text-primary"></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Dostava na kućnoj adresi</h5>
+                      <p class="card-text">
+                          Vršimo dostavu na teritoriji cele Srbije. Uz maksimalne zaštite pošiljke tokom transporta. Možete da računate na nas!
+                      </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
+                
+                <div class="card  mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><i class="fas fa-history text-success"></i></div>
+                    <div class="card-body">
+                      <h5 class="card-title">Zamena</h5>
+                      <p class="card-text">
+                          Promašili ste veličinu ili Vam se ne sviđa boja artikla koji ste poručili. Bez brige, možete izvršiti zamenu artikla čak 48h posle prijema.  
+                      </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- /Kartice  -->
+
+
+
+
+
+
+
+
+
+
     <!-- Footer -->
     <div class=" footer">
         <div class="container ">
