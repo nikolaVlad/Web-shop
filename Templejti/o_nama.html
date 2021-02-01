@@ -13,10 +13,8 @@
     <link rel="stylesheet" href="./static/style.css">
 
     <!--Title-->
-    <title>Web shop</title>
+    <title>O nama</title>
 </head>
-
-
 <body>
    
 <!-- Stranica -->
@@ -24,20 +22,18 @@
     <!-- Sadržaj -->
     <div id = 'content-wrap'>
         <!-- Scroll Up Button -->
-            <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+        <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
         <!-- /Scroll Up Button -->
 
-
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light mt-2 ">
+         <!-- Navigation -->
+         <nav class="navbar navbar-expand-lg navbar-light mt-2 ">
             <!-- Kontejner navigacije -->
             <div class="container-fluid">
                 
 
                 <!-- Logo -->
                 <div class="col-sm-12 col-lg-2  text-center ">
-                        <a class="navbar-brand mb-2" href="#">Logo</a>
+                        <a class="navbar-brand mb-2" href="./index.html">Logo</a>
                 </div>
                 <!-- /Logo -->
 
@@ -69,8 +65,8 @@
                     <ul class="navbar-nav mr-auto">
 
                         <!-- Novo -->
-                        <li class="nav-item active ">
-                            <a class="nav-link " href="#"> Novo </a> 
+                        <li class="nav-item ">
+                            <a class="nav-link " href="./index.html"> Novo </a> 
                         </li>
 
                      
@@ -149,8 +145,8 @@
                         <!-- /Kategorije ( SHOP )-->
 
                         <!-- O nama -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="./o_nama.html">O nama</a> 
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">O nama</a> 
                         </li>
 
                         <!-- Kontakt -->
@@ -390,346 +386,113 @@
         <!-- /Navigation -->
 
 
-        <!-- Slajder -->
-        <div class="container " style="padding: 30px; padding-left: 12%; padding-right: 12%;  ">
+        <!-- O nama-->
+            <div class="container mt-5  ">
 
-            <!-- Slajdovi -->
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" 
-            onmouseover="showArticleInfo('infoArtikal1', 'infoArtikal2')"
-            onmouseout="hideArticleInfo('infoArtikal1', 'infoArtikal2')">
-                
-                <!-- Items -->
-                <div class="carousel-inner">
-                
-                
-
-                
-                    <!-- ITEM 1-->
-                    <div class="carousel-item active">
-
-                        <!-- Informacije -->
-                            <div class=" info-artikal " id = "infoArtikal1">
-                                <!-- Forma za dodavanje u korpi -->
-                                <form action = "#" method = "POST">
-
-                                    <!-- Naziv artikla -->
-                                    <div class="row">
-                                        <!--Nevidljivo polje za Id artikla -->
-                                            <input name = "id" value ="" hidden>
-                                        <!--Nevidljivo polje za Id artikla -->
-
-                                        <div class="col-12 text-center "> <b class="text-primary"> Nike airmax dux</b></div>
-                                    </div> 
-                                    <!-- /Naziv artikla-->
-
-                                    <!-- Red 1--> 
-                                    <div class="row">
-
-                                        <!-- Velicina -->
-                                        <div class="col-6 text-center">
-                                            Veličina : 
-                                            <div class="text-info">
-                                                <input type="radio" name = "velicina" value = "" > S
-                                                <input type="radio" name = "velicina" value = ""checked> M
-                                                <input type="radio" name = "velicina" value = ""> L
-                                                <input type="radio" name = "velicina" value = ""> XL
-                                            </div>
-                                        </div>
-                                        <!-- /Velicina -->
+                <!-- Nslov -->
+                <div class="row ">
+                    <div class="col-sm-12 col-lg-12">
+                        <div class="text-center mt-2 mb-2 ">O nama</div>
+                        <hr style="margin-left: 120px; margin-right: 120px; background-color: rgba(0, 0, 0, 0.109);">
+                    </div>
+                </div>
+                <!-- /Naslov -->
+                <div class="row mt-5">
+                    <div class="col-sm-12 col-lg-3 oNama-kartica" >
+                        <div class="span oNama-naslov">Naslov 1</div>
+                        <p class="oNama-sadrzaj"> 
+                            It is a long established fact that a reader 
+                            will be distracted by the readable content 
+                            of a page when looking at its layout. 
+                            The point of using Lorem Ipsum is 
+                            that it has a more-or-less normal 
+                           
+                        </p>
+                    </div>
 
 
+                    <div class="col-sm-12 col-lg-4 oNama-kartica" >
+                        <div class="span oNama-naslov">Naslov 2</div>
+                        <p class="oNama-sadrzaj"> 
+                            It is a long established fact that a reader 
+                            will be distracted by the readable content 
+                            of a page when looking at its layout. 
+                            The point of using Lorem Ipsum is 
+                            <br>
+                            that it has a more-or-less normal 
+                            It is a long established fact that a reader 
+                            will be distracted by the readable content 
+                            of a page when looking at its layout. 
+                            The point of using Lorem Ipsum is 
+                            that it has a more-or-less normal 
+                        </p>
+                    </div>
 
-                                        <!-- Boja -->
-                                        <div class="col-6 text-center">
-                                            Boja :  
-                                            <select class="form-select text-white" style="background-color: transparent; border: none;" name = "boja">
-                                                <option class="text-dark">Crvena</option>
-                                                <option class="text-dark">Crna</option>
-                                                <option class="text-dark">Zuta</option>
-                                            </select>
-                                        </div>
-                                        <!-- /Boja -->
-
-                                    
-                                    </div>
-                                    <!-- /Red 1--> 
-
-
-
-                                    <!-- Red 2-->
-                                    <div class="row mt-2">
-
-                                        <!-- Pol -->
-                                        <div class="col-6 text-center">
-                                            Pol : <b class="text-info">Muški</b>
-                                        </div>
-                                        <!-- /Pol--> 
-
-
-                                        <!-- Cena -->
-                                        <div class="col-6 text-center">
-                                            Cena : <b class="text-info"> 3200 RSD</b>
-                                        </div>
-                                        <!-- /Cena -->
-
-                                    </div>
-                                    <!-- /Red 2--> 
-
-                                    <div class="row mt-2">
-                                        <div class="col-6 text-center">
-                                            Količina : 
-                                            <input type="number" value="1" class="noBorder text-info " max="10" min="1" style="width: 40px;" >
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Red 3 Submit -->
-                                    <div class="row mt-4">
-                                        <div class="col-12 d-flex justify-content-center">
-                                            <button type="submit" class="btn btn-outline-info" style="width: 100%;"><i class="fas fa-shopping-cart"></i>
-                                                Dodaj u korpi 
-                                        </div>
-                                    </div>
-                                    <!-- /Red3 Submit-->
-
-
-                                </form>
-                                <!-- /Forma za dodavanje u korpi -->
-
-
-                            </div>
-                            <!-- /Informacije-->
-
-
-                            <!-- Slika artikla-->
-                                <a href="/artikal">
-                                    <img class="d-block w-100 slajd-item" src="/Templejti/static/img/Artikli/s3.jpg" alt="Third slide">
-                                </a>
-                            <!-- /Slika artikla-->
+                    <div class="col-sm-14 col-lg-3 oNama-kartica" >
+                        <div class="span oNama-naslov">Naslov 3</div>
+                        <p class="oNama-sadrzaj"> 
+                            It is a long established fact that a reader 
+                            will be distracted by the readable content 
+                            of a page when looking at its layout. 
+                            The point of using Lorem Ipsum is 
+                            that it has a more-or-less normal 
                             
-
+                        </p>
                     </div>
-                    <!-- /ITEM 1-->
-
-                    <!-- ITEM 2-->
-                    <div class="carousel-item">
-
-                        <!-- Informacije -->
-                            <div class=" info-artikal " id = "infoArtikal2">
-                                <!-- Forma za dodavanje u korpi -->
-                                <form action = "#" method = "POST">
-
-                                    <!-- Naziv artikla -->
-                                    <div class="row">
-                                        <!--Nevidljivo polje za Id artikla -->
-                                            <input name = "id" value ="" hidden>
-                                        <!--Nevidljivo polje za Id artikla -->
-
-                                        <div class="col-12 text-center "> <b class="text-primary"> Nike duks bez kapuljače</b></div>
-                                    </div> 
-                                    <!-- /Naziv artikla-->
-
-                                    <!-- Red 1--> 
-                                    <div class="row">
-
-                                        <!-- Velicina -->
-                                        <div class="col-6 text-center">
-                                            Veličina : 
-                                            <div class="text-info">
-                                                <input type="radio" name = "velicina" value = ""checked> M
-                                                <input type="radio" name = "velicina" value = ""> XL
-                                            </div>
-                                        </div>
-                                        <!-- /Velicina -->
-
-
-
-                                        <!-- Boja -->
-                                        <div class="col-6 text-center">
-                                            Boja :  
-                                            <select class="form-select text-white" style="background-color: transparent; border: none;" name = "boja">
-                                                <option class="text-dark">Žuta</option>
-                                                <option class="text-dark">Crna</option>
-                                            </select>
-                                        </div>
-                                        <!-- /Boja -->
-
-                                    
-                                    </div>
-                                    <!-- /Red 1--> 
-
-
-
-                                    <!-- Red 2-->
-                                    <div class="row mt-2">
-
-                                        <!-- Pol -->
-                                        <div class="col-6 text-center">
-                                            Pol : <b class="text-info">Muški</b>
-                                        </div>
-                                        <!-- /Pol--> 
-
-
-                                        <!-- Cena -->
-                                        <div class="col-6 text-center">
-                                            Cena : <b class="text-info"> 3700 RSD</b>
-                                        </div>
-                                        <!-- /Cena -->
-
-                                    </div>
-                                    <!-- /Red 2--> 
-
-                                    <div class="row mt-2">
-                                        <div class="col-6 text-center">
-                                            Količina : 
-                                            <input  type="number" value="1" class="noBorder text-info " max="10" min="1" style="width: 40px;" >
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Red 3 Submit -->
-                                    <div class="row mt-4">
-                                        <div class="col-12 d-flex justify-content-center">
-                                            <button type="submit" class="btn btn-outline-info" style="width: 100%; "><i class="fas fa-shopping-cart"></i>
-                                                Dodaj u korpi 
-                                        </div>
-                                    </div>
-                                    <!-- /Red3 Submit-->
-
-
-                                </form>
-                                <!-- /Forma za dodavanje u korpi -->
-
-
-                            </div>
-                            <!-- /Informacije-->
-
-
-                            <!-- Slika artikla-->
-                                <a href="/artikal">
-                                    <img class="d-block w-100 slajd-item" src="/Templejti/static/img/Artikli/s1.jpg" alt="Third slide">
-                                </a>
-                            <!-- /Slika artikla-->
-                            
-
-                    </div>
-                    <!-- /ITEM 2-->
-
                     
-
-                
                 </div>
-                <!-- /Items-->
+
+                <div class="row mt-5">
+                    <div class="col-11 oNama-kartica" >
+                        <div class="span oNama-naslov">Glavne informacije</div>
+                        <p class="oNama-sadrzaj"> 
+                            Web shop se bavi trgovinom i ostalim
+                            delatnostima koje obuhvaaju profaju robe i ostalo.    
+                            Web shop se bavi trgovinom i ostalim
+                            delatnostima koje obuhvaaju profaju robe i ostalo.    
+                            Web shop se bavi trgovinom i ostalim
+                            delatnostima koje obuhvaaju profaju robe i ostalo.    
+                        </p>
+                    </div>
+                </div>
 
                 
 
+                
 
-                <!-- Prethodna -->
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span aria-hidden="true"><i class="fas fa-chevron-circle-left text-dark"></i></span>
-                <span class="sr-only">Previousa</span>
-                </a>
-                <!-- /Prethodna -->
-
-
-                <!-- Sledeća -->
-                <a class="carousel-control-next " href="#carouselExampleControls" role="button" data-slide="next">
-                <span aria-hidden="true"><i class="fas fa-chevron-circle-right text-dark"></i></span>
-                <span class="sr-only ">Next</span>
-                </a>
-                <!-- /Sledeća -->
-
-
-
-            </div>
-            <!-- /Slajdovi -->
-
-
-        </div>
-        <!-- /Slajder -->
-
-
-        <!-- Kartice  -->
-        <div class="container mt-3 mb-3">
-            <div class="row  ">
-
-                <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-
-                    <div class="card  mb-3" style="max-width: 18rem;">
-                        <div class="card-header"><i class="fas fa-exclamation-circle text-danger"></i></div>
-                        <div class="card-body">
-                        <h5 class="card-title">Akcije</h5>
-                        <p class="card-text">
-                            Svakog dana akcije na sve artikle. Ne propustite ponudu.
-                        </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-                        
-                    <div class="card  mb-3" style="max-width: 18rem;">
-                        <div class="card-header"><i class="fas fa-truck text-primary"></i></div>
-                        <div class="card-body">
-                        <h5 class="card-title">Dostava na kućnoj adresi</h5>
-                        <p class="card-text">
-                            Vršimo dostavu na teritoriji cele Srbije. Uz maksimalne zaštite pošiljke tokom transporta. Možete da računate na nas!
-                        </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
-                    
-                    <div class="card  mb-3" style="max-width: 18rem;">
-                        <div class="card-header"><i class="fas fa-history text-success"></i></div>
-                        <div class="card-body">
-                        <h5 class="card-title">Zamena</h5>
-                        <p class="card-text">
-                            Promašili ste veličinu ili Vam se ne sviđa boja artikla koji ste poručili. Bez brige, možete izvršiti zamenu artikla čak 48h posle prijema.  
-                        </p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-        <!-- /Kartice  -->
-
-
+            </div>   
+        <!-- O nama-->     
     </div>
     <!-- /Sadržaj -->
 
 
+
     <!-- Footer-->
     <footer id = 'footer'>
-            <div class="container-fluid footer">
+        <div class="container-fluid footer">
 
-                <div class="row p-1">
-                    <div class="col-lg-4 col-sm-12 text-center">
-                        mail@mail.com
-                    </div>
+            <div class="row p-1">
+                <div class="col-lg-4 col-sm-12 text-center">
+                    mail@mail.com
+                </div>
 
-                    <div class="col-lg-4 col-sm-12 text-center">
-                        Naziv sajta
-                    </div>
+                <div class="col-lg-4 col-sm-12 text-center">
+                    Naziv sajta
+                </div>
 
-                    <div class="col-lg-4 col-sm-12 text-center">
-                        <i class="fab fa-instagram" style="color: rgb(54, 0, 104);"></i>
-                        <i class="fab fa-facebook-messenger" style="color: rgb(0, 47, 100);"></i>
-                    </div>
+                <div class="col-lg-4 col-sm-12 text-center">
+                    <i class="fab fa-instagram" style="color: rgb(54, 0, 104);"></i>
+                    <i class="fab fa-facebook-messenger" style="color: rgb(0, 47, 100);"></i>
                 </div>
             </div>
+        </div>
     </footer>
     <!-- /Footer-->
 
 
+    
 </div>
 <!-- /Stranica -->
-
-    
 
 
 

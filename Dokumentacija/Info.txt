@@ -1,11 +1,11 @@
 Rute :
 
-	#) Početna (Novo)
+	#) Početna (Novo) [Rešeno]
 
 	#) O nama
 	#) Kontakt
 
-	#) Uloguj se
+	#) Uloguj se [Rešeno]
 	#) Registruj se (Novi profil)
 
 

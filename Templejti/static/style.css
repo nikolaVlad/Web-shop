@@ -1,6 +1,6 @@
-/* Global-------------- */
+/* ? Global -------------- */
 
-/* Fixirani bottom na dnu stranice */
+/* Fixirani FOOTER na dnu stranice */
    #page-container {
       position: relative;
       min-height: 100vh;
@@ -16,7 +16,7 @@
       width: 100%;
       height: 2.5rem;            /* Footer height */
    }
-/* /Fixirani bottom na dnu stranice */
+/* /Fixirani FOOTER na dnu stranice */
  
 
 /* Button za scroll Up na stranici */
@@ -58,23 +58,14 @@
       width: var(--cd-back-to-top-size);
       box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
       background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
-      background-color: hsla(5, 76%, 62%, .8);
+      background-color: rgba(255, 255, 255, 0.8);
       background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
    }
-
-
-
 /* /Button za scroll Up na stranici */
 
 
 
-/* /Global-------------- */
-
-
-
-
-
-/* ? Body */
+/*  Body */
 body
 {
     /* Slika pozadine  --------------------------*/
@@ -99,63 +90,60 @@ body
     /* End Slika pozadine  --------------------------*/
 }
 
+/*  /Body */
 
 
+/*  Navigacija */
 
-
-
-
-/* ? Navigacija */
-
+/* Stil menija */
 .navbar-nav
 {
    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 
+/* Aktivna stavka */
 .active 
 {
    border-bottom: 1.6px solid ;
 }
+
 
 /* Stavka iz menija */
 .nav-link:hover
 { 
    background-color: rgba(122, 122, 122, 0.137);
    border-radius: 10px;
-
-  
-   
 }
 
 
-/* Izbor kategorija iz itemsa - shop */
+/* Kategorija - shop meni */
 .shop-menu 
 {
-   background-color: rgb(138, 135, 135);
-   padding-left: 20px;
-   width: 300px;
+   background-color: rgba(87, 87, 87, 0.788);
+   
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 320px;
    height: auto;
    max-height: 300px;
+
+   overflow: visible;
    overflow-x: hidden;
 
- 
    position: absolute; 
    margin-top: -10px; 
-  
-   
+   z-index: 400;
 }
 
+/* Link u Shop meniu */
 .shop-menu a
 {
    color: rgb(255, 255, 255);
-   
-   
 }
 
 
-
-
+/* Polje za pretraživanje artikla */
 .pretrazi-polje
 {
    background-color: rgb(173, 173, 173);
@@ -172,14 +160,7 @@ body
 }
 
 
-.noBorder
-{
-   border: none; 
-   background-color: transparent;
-}
-
-
-
+/* Meni korpe kupca */
 .korpa-menu
 {
    background-color: rgba(255, 255, 255, 0.89);
@@ -190,19 +171,49 @@ body
    
    /* Scroll */
 
-  
    height: auto;
    max-height: 300px;
    overflow-x: hidden;
 }
 
 
+/* Button bez ivica i boje */
+.noBorder
+{
+   border: none; 
+   background-color: transparent;
+}
+
+
+/* Podnožje */
+.footer
+{
+   position: relative;
+   height: 40px;
+   width:100%;
+   margin-top: 10px;
+   border-top: rgba(255, 255, 255, 0.534) 2px solid;
+   padding-left: 30px;
+   color: rgb(0, 0, 0);
+   height: 100%;
+}
+
+/* end ? Global -------------- */
+
+
+
+
+
+
+/* ? index.html -------------- */
+
+/* Artikal u slajderu sa artiklima */
 .slajd-item
 {
-
    height : 600px;
 }
 
+/* Informacije o svakom artiklu u slajderu sa artiklima */
 .info-artikal
 {
    /* position: none; */
@@ -219,15 +230,59 @@ body
    z-index: 200;
 }
 
+/* end ? index.html -------------- */
 
-.footer
+
+/* ? o_nama.html -------------- */
+
+/* Sadrzaj */
+.oNama
 {
-   position: relative;
-   height: 40px;
-   width:100%;
-   margin-top: 10px;
-   border-top: rgba(255, 255, 255, 0.534) 2px solid;
-   padding-left: 30px;
-   color: rgb(0, 0, 0);
-   height: 100%;
+   max-height: 720px;
+   height : 7300px;
+   
+   border-radius: 20px;
+   background-color: rgba(255, 255, 255, 0.367);
+   padding : 30px;   
+   
+   overflow: auto;
+   overflow-x: hidden;
+   margin-bottom: 40px;
 }
+
+.oNama-kartica
+{
+  padding: 7px; 
+  background-color: rgba(255, 255, 255, 0.299);
+  box-shadow: 9px 10px 10px rgba(0, 0, 0, 0.115);
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+  overflow: visible;
+  overflow-x: hidden;
+
+  
+  max-height: 260px;
+}
+
+.oNama-naslov
+{
+   background-color: rgb(142, 142, 142);
+   color: white;
+   
+   text-align: center;
+   
+}
+
+.oNama-sadrzaj
+{
+   padding-top: 10px;
+   padding-right: 20px;
+   padding-left: 20px;
+   
+  
+}
+
+
+/* ? o_nama.html -------------- */
