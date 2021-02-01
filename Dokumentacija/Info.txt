@@ -1,28 +1,28 @@
 Rute :
 
-	#) Početna (Novo) [Rešeno]
+	#) Početna (Novo) [REŠEMO] !
 
-	#) O nama
-	#) Kontakt
+	#) O nama [REŠEMO] !
+	#) Kontakt !
 
-	#) Uloguj se [Rešeno]
-	#) Registruj se (Novi profil)
-
-
-	#) Moj profil
-	#) Izmena profila
-	#) Brisanje profila
-
-	#) Sve kategorije ( SHOP ) 
-	#) Kategorija 
-	#) Nova kategorija
-	#) Izmena kategorije
-	#) Brisanje kategorije
+	#) Uloguj se [REŠEMO] !
+	#) Registruj se (Novi profil) !
 
 
-	#) Proizvod
-	#) Proizvodi
-	#) Novi proizvod
+	#) Moj profil !
+	#) Izmena profila !
+	#) Brisanje profila !
+
+	#) Sve kategorije ( SHOP ) ! 
+	#) Kategorija !
+	#) Nova kategorija !
+	#) Izmena kategorije !
+	#) Brisanje kategorije !
+
+
+	#) Proizvod !
+	#) Proizvodi !
+	#) Novi proizvod 
 		- Informacije o proizvodu
 		- Slike proizvoda
 
@@ -30,13 +30,13 @@ Rute :
 		- Informacije o proizvodu
 		- Slike proizvoda
 
-	#) Brisanje proizvoda
+	#) Brisanje proizvoda !
 
 
-	# Korpa
-	# Dodaj proizvod
-	# Ukloni proizvod
-	# Naruči
+	# Korpa !
+	# Dodaj proizvod !
+	# Ukloni proizvod !
+	# Naruči !
 
 		
 

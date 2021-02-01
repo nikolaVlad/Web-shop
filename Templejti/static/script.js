@@ -76,6 +76,7 @@ var hideArticleInfo = (...args) =>
 // Funkcija za scroll Up na svakoj stranici
 $(document).ready(function() 
 {
+  $('#toTopBtn').hide();
   $(window).scroll(function() {
     if ($(this).scrollTop() > 20) 
     {
