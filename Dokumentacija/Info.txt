@@ -1,43 +1,43 @@
 Rute :
 
-	#) Početna (Novo) [REŠEMO] !
+	#) Početna (Novo) !!!		  	/
 
-	#) O nama [REŠEMO] !
-	#) Kontakt !
+	#) O nama [REŠEMO] !!!			/o_nama
+	#) Kontakt ! [REŠEMO] !!!			/kontakt
 
-	#) Uloguj se [REŠEMO] !
-	#) Registruj se (Novi profil) !
+	#) Uloguj se [REŠEMO] !!!			MODAL
+	#) Registruj se (Novi profil) !!! 			/registracija
 
+	
+	#) Moj profil 				/mojProfil
+	#) Izmena profila 				/mojProfil/izmena_profila
+	#) Brisanje profila 				/mojProfil/brisanje_profila
 
-	#) Moj profil !
-	#) Izmena profila !
-	#) Brisanje profila !
+	#) Upravljanje porudzbinama			/adminSekcija
 
-	#) Sve kategorije ( SHOP ) ! 
-	#) Kategorija !
-	#) Nova kategorija !
-	#) Izmena kategorije !
-	#) Brisanje kategorije !
-
-
-	#) Proizvod !
-	#) Proizvodi !
-	#) Novi proizvod 
-		- Informacije o proizvodu
-		- Slike proizvoda
-
-	#) Izmena proizvoda
-		- Informacije o proizvodu
-		- Slike proizvoda
-
-	#) Brisanje proizvoda !
+	#) Sve kategorije ( SHOP )  			/svi_proizvodi?kategorija=  ||  /svi_proizvodi
+	#) Kategorija 				/svi_proizvodi?kategorija="Naziv kategorije"
+	#) Nova kategorija 				/novaKategorija
+	#) Izmena kategorije 			/kategorija/:id/izmena_kategorije
+	#) Brisanje kategorije 			/kategorija/:id/brisanje_kategorije
 
 
-	# Korpa !
-	# Dodaj proizvod !
-	# Ukloni proizvod !
-	# Naruči !
+	#) Proizvod 				/proizvodi/proizvod/:id
+	#) Proizvodi 				/proizvodi 
+	#) Novi proizvod 				
+		- Informacije o proizvodu		/proizvodi/novi_proizvod
+		- Slike proizvoda			/proizvodi/proizvod/:id/slike (@)
 
-		
+	#) Izmena proizvoda				
+		- Informacije o proizvodu		/proizvodi/proizvod/:id/izmena_proizvoda
+		- Slike proizvoda			/proizvodi/proizvod/:id/slike (@)
+
+	#) Brisanje proizvoda 			/proizvodi/proizvod/:id/brisanje_proizvoda
+
+
+	#) Sve poruđbine				/mojProfil/moja_korpa
+
+16
+	
 
  

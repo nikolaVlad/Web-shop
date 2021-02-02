@@ -1,0 +1,6 @@
+
+- U listi koja se otvara kad se klikne na ikonicu korpe, prikazane su sve porudžbine koje su sa statusom "na čekanju"
+
+- Limit prikaza je na 10 porudžbina
+
+- Klikom na sve poruđbine, vodi se korisnik na stranicu sa svim poružbinama sa svakim statusom.
