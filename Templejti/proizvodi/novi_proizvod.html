@@ -26,8 +26,8 @@
         <!-- /Scroll Up Button -->
 
         
-          <!-- Navigation -->
-          <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <!-- Kontejner navigacije -->
             <div class="container-fluid">
                 
@@ -235,7 +235,7 @@
 
 
                         <!-- Registruj se -->
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a href="../profil/registracija.html" class = "nav-link text-info" style="cursor: pointer;" > Registruj se</a>
                         </li>
 
@@ -382,9 +382,141 @@
         <!-- /Navigation -->
       
 
+        <!-- Naslov -->
+        <div class="container text-center mt-5">
+            <div style="font-size: larger;">Novi proizvod</div>
+            <hr style="margin-left: 30px; margin-right: 30px;">
+        </div>
+        <!-- /Naslov -->
 
-        
-        
+        <!-- Forma za unos podataka -->
+        <div class="container">
+            <form action="" method="" class="form-group">
+
+                <div class="form-group ">
+
+
+                    <!-- Naziv -->
+                    <div class="row ml-5 mr-5 mt-4 mb-4">
+                        <div class="col-lg-3 mt-1 mb-2">
+                            *Naziv proizvoda: 
+                        </div>
+                        <div class="col-lg-9">
+                            <input type="text" name="naziv" class="form-control">
+                            <div class="small text-danger">Ovo polje je obavezno!</div>
+                        </div>
+                        
+                    </div>
+
+
+                    <!-- Opis -->
+                    <div class="row ml-5 mr-5 mt-4 mb-4">
+                        <div class="col-lg-3 mt-1 mb-2">
+                           Opis proizvoda (poželjno): 
+                        </div>
+                        <div class="col-lg-9">
+                           <textarea name = 'opis' class="form-control" style="height: 150px; overflow: visible;"
+                           placeholder="Recite nešto o ptoizvodu koji nudite."
+                           ></textarea>
+                        </div>
+                    </div>
+
+
+                    <!-- Dostupne Veličine -->
+                    <div class="row ml-5 mr-5 mt-4 mb-4">
+                        <div class="col-lg-3 mt-1 mb-2">
+                           Dostupne veličine:
+                        </div>
+                        <div class="col-lg-9">
+                           <textarea name = 'velicina' class="form-control" style="height: 100px; overflow: visible;"
+                           placeholder="Unesite dostupne veličine proizvoda razdvojene znakom zarez ( , )."
+                           ></textarea>
+                        </div>
+                    </div>
+                    
+
+
+                    <!-- Dostupne Boje -->
+                    <div class="row ml-5 mr-5 mt-4 mb-4">
+                        <div class="col-lg-3 mt-1 mb-2">
+                           Dostupne boje:
+                        </div>
+                        <div class="col-lg-9">
+                           <textarea name = 'boja' class="form-control" style="height: 100px; overflow: visible;"
+                           placeholder="Unesite dostupne boje proizvoda razdvojene znakom zarez ( , )."
+                           ></textarea>
+                        </div>
+                    </div>
+                  
+
+                    <!-- Pol -->
+                    <div class="row ml-5 mr-5 mt-4 mb-4">
+                        <div class="col-lg-3 mt-1 mb-2">
+                           Pol:
+                        </div>
+                        <div class="col-lg-4">
+                            <select name="pol" class="form-control">
+                                <option value="m">Muški</option>
+                                <option value="ž">Ženski</option>
+                                <option value="u">Univerzalan</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Cena -->
+                    <div class="row ml-5 mr-5 mt-4 mb-4">
+                        <div class="col-lg-3 mt-1 mb-2">
+                            *Cena: 
+                        </div>
+                        <div class="col-lg-4 ">
+                            <input type="text" name="cena" class="form-control">
+
+                            <div class="d-flex justify-content-end col">
+                            <select name="valuta" class="noBorder" style=" margin-top: -38px; margin-right: -12px;">
+                                <option value="RSD">RSD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                            </div>
+
+                            <div class="small text-danger">Ovo polje je obavezno!</div>
+                            
+                        </div>
+                    </div>
+
+
+
+                    <!-- Status -->
+                      <!-- Pol -->
+                      <div class="row ml-5 mr-5 mt-4 mb-4">
+                        <div class="col-lg-3 mt-1 mb-2">
+                           Status:
+                        </div>
+                        <div class="col-lg-4">
+                            <select name="pol" class="form-control">
+                                <option value="dostupno">Dostupno</option>
+                                <option value="prikazano">Prikazano</option>
+                                <option value="sakriveno">Sakriveno</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center ">
+                    <button type="submit" class="btn btn-info  col-sm-3">Dalje >></button>
+                </div>
+
+
+
+            </form>
+        </div>
+
+
+
+        <!-- /Forma za unos podataka -->
         
         
     </div>
