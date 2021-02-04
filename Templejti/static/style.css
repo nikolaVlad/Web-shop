@@ -69,7 +69,7 @@
 body
 {
     /* Slika pozadine  --------------------------*/
-    background-image: url('/Templejti/static/img/site/bg-site2.jpg');
+    background-image: url('/Templejti/static/img/site/bg-site.jpg');
 
     background-position: center center;
     /* Background image doesn't tile */
@@ -332,11 +332,10 @@ body
 
 
 /* Izabrana stavka za određeni proizvod */
-.korpa-stavka
+.profil-meni
 {
-   margin-bottom: 8px;
-   
-   padding: 3px;
+ 
+   border-bottom: 1px solid black;
    
   
 }
