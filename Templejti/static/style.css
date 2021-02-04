@@ -325,14 +325,22 @@ body
 }
 
 
-
-
-
-
-
-
-
-
-
 /* end ? slika_proizvoda -------------- */
+
+
+/* ? Stranica sa porudžbinama */
+
+
+/* Izabrana stavka za određeni proizvod */
+.korpa-stavka
+{
+   margin-bottom: 8px;
+   
+   padding: 3px;
+   
+  
+}
+
+/* ? Stranica sa porudžbinama */
+
 
