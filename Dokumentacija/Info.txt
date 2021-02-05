@@ -22,11 +22,11 @@ Rute :
 	#) Brisanje kategorije 			/kategorija/:id/brisanje_kategorije
 
 
-	#) Proizvod 				/proizvodi/proizvod/:id
+	#) Proizvod !!!				/proizvodi/proizvod/:id
 	#) Proizvodi 				/proizvodi 
-	#) Novi proizvod 				
-		- Informacije o proizvodu		/proizvodi/novi_proizvod
-		- Slike proizvoda			/proizvodi/proizvod/:id/slike (@)
+	#) Novi proizvod !!!				
+		- Informacije o proizvodu !!!		/proizvodi/novi_proizvod
+		- Slike proizvoda !!!			/proizvodi/proizvod/:id/slike (@)
 
 	#) Izmena proizvoda				
 		- Informacije o proizvodu		/proizvodi/proizvod/:id/izmena_proizvoda
