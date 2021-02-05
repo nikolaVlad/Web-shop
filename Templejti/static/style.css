@@ -69,7 +69,7 @@
 body
 {
     /* Slika pozadine  --------------------------*/
-    background-image: url('/Templejti/static/img/site/bg-site.jpg');
+    background-image: url('/Templejti/static/img/site/bg-site2.jpg');
 
     background-position: center center;
     /* Background image doesn't tile */
@@ -334,12 +334,24 @@ body
 /* Izabrana stavka za određeni proizvod */
 .profil-meni
 {
- 
    border-bottom: 1px solid black;
-   
-  
 }
 
-/* ? Stranica sa porudžbinama */
+/* end ? Stranica sa porudžbinama */
 
+
+
+/* ? Stranica sa proizvodom */
+
+/* Slike */
+.proizvod-slike
+{
+  
+
+   height: 90vh;
+   
+}
+
+
+/* end ? Stranica sa proizvodom */
 

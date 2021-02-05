@@ -9,7 +9,7 @@ Rute :
 	#) Registruj se (Novi profil) !!! 			/registracija
 
 	
-	#) Moj profil 				/mojProfil
+	#) Moj profil !!! 				/mojProfil
 	#) Izmena profila 				/mojProfil/izmena_profila
 	#) Brisanje profila 				/mojProfil/brisanje_profila
 
@@ -35,7 +35,7 @@ Rute :
 	#) Brisanje proizvoda 			/proizvodi/proizvod/:id/brisanje_proizvoda
 
 
-	#) Sve poruđbine				/mojProfil/moja_korpa
+	#) Sve poruđbine !!!				/mojProfil/moja_korpa
 
 16
 	
