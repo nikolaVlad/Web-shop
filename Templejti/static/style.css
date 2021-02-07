@@ -374,10 +374,16 @@ body
 
 
 /* ? Stranica sa svim proizvodima */
-sviProizvodi-meni
+.sviProizvodi-meni 
 {
-   
+   padding-left: 20px ; 
+   padding-right: 20px ; 
+   background-color: rgba(155, 155, 155, 0.326); 
+   padding: 20px; 
 }
+
+
+
 
 
 

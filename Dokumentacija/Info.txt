@@ -15,15 +15,15 @@ Rute :
 
 	#) Upravljanje porudzbinama			/adminSekcija
 
-	#) Sve kategorije ( SHOP )  			/svi_proizvodi?kategorija=  ||  /svi_proizvodi
-	#) Kategorija 				/svi_proizvodi?kategorija="Naziv kategorije"
-	#) Nova kategorija 				/novaKategorija
-	#) Izmena kategorije 			/kategorija/:id/izmena_kategorije
-	#) Brisanje kategorije 			/kategorija/:id/brisanje_kategorije
+	#) Sve kategorije ( SHOP )  !!!			/proizvodi?kategorija= '' ||  /svi_proizvodi
+	#) Kategorija !!!				/svi_proizvodi?kategorija="Naziv kategorije"
+	#) Nova kategorija  !!!     -MODAL		/adminSekcija/novaKategorija
+	#) Izmena kategorije !!! -MODAL		/adminSekcija/:kategorijaId/izmena_kategorije (Modal)
+	#) Brisanje kategorije !!! -MODAL		/kategorija/:id/brisanje_kategorije
 
 
 	#) Proizvod !!!				/proizvodi/proizvod/:id
-	#) Proizvodi 				/proizvodi 
+	#) Proizvodi !!!				/proizvodi 
 	#) Novi proizvod !!!				
 		- Informacije o proizvodu !!!		/proizvodi/novi_proizvod
 		- Slike proizvoda !!!			/proizvodi/proizvod/:id/slike (@)

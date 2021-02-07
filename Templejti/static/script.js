@@ -73,7 +73,7 @@ var hideArticleInfo = (...args) =>
 
 
 
-// Funkcija za scroll Up na svakoj stranici
+// Funkcija za scroll Up button na svakoj stranici
 $(document).ready(function() 
 {
   $('#toTopBtn').hide();
@@ -97,3 +97,32 @@ $(document).ready(function()
     return false;
   });
 });
+
+
+// Funkcija za prikaz i sakrivanje filter menija, na stranici sa svim proizvodima
+var showHideFilters = () =>
+{
+
+  var filterBtn = document.getElementById('filterBtn');
+  
+
+
+  var filterMenu = document.getElementById("filterMenu");
+
+  if(filterMenu.style.display == 'block')
+  {
+      filterMenu.style.display = 'none';
+      filterBtn.classList.add(['fa-chevron-down']);
+   
+  }
+
+  else
+  {
+      filterMenu.style.display = 'block';
+      
+      filterBtn.classList.add(['fa-chevron-up']);
+  }
+
+  console.log(filterBtn.classList.value)
+
+}
