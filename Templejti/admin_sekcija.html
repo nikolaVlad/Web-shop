@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Bootstrap CSS-->
-    <link rel = 'stylesheet' href='../static/bootstrap/css/bootstrap.min.css'>
+    <link rel = 'stylesheet' href='./static/bootstrap/css/bootstrap.min.css'>
     <!--FontAwesome ikonice-->
-    <link rel = 'stylesheet' href='../static/fontawesome/css/all.min.css'>
+    <link rel = 'stylesheet' href='./static/fontawesome/css/all.min.css'>
     <!--Custom CSS-->
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="./static/style.css">
 
     <!--Title-->
     <title>Templejt</title>
@@ -26,8 +26,8 @@
         <!-- /Scroll Up Button -->
 
         
-          <!-- Navigation -->
-          <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light  ">
             <!-- Kontejner navigacije -->
             <div class="container-fluid">
                 
@@ -235,7 +235,7 @@
 
 
                         <!-- Registruj se -->
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a href="../profil/registracija.html" class = "nav-link text-info" style="cursor: pointer;" > Registruj se</a>
                         </li>
 
@@ -380,12 +380,243 @@
             <!-- /Kontejner navigacije -->
         </nav>
         <!-- /Navigation -->
+
+        
+       <!-- Naslov -->
+        <div class="container mt-5 mb-4">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <span class="h4"> Admin panel </span>
+                    <hr class="">
+                </div>
+            </div>
+        </div>
+       <!-- /Naslov -->
+
+       <!-- Izbor meni  -->
+       <div class="container">
+            <div class="row ">
+
+                <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                    <a href='' class="btn  btn-info w-100">Sve porudžbine</a>
+                </div>
+
+                <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                    <a href = '' class="btn  btn-outline-info w-100">Novi proizvod</a>
+                </div>
+
+                <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                    <a href = '' class="btn  btn-outline-info w-100">Kategorije</a>
+                </div>
+
+                <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                    <button class="btn  btn-outline-info w-100">Proizvoid</button>
+                </div>
+            </div>
+       </div>
+       <!-- Izbor meni -->        
+        
+
+        <!-- Filter button  -->
+        <div class="container pl-5 pr-5  pb-2 pt-2 "  style="background-color: rgba(255, 255, 255, 0.061);">
+            <div class=" mt-2 mb-2 text-center">
+                    <span class="text-info">Filteri</span> 
+                    <i class="fas fa-chevron-down text-secondary" role="button" onclick="showHideFilters();" id='filterBtn' ></i>
+            </div>
+        </div>
+        <!-- /Filter button  -->
+
+
+        
+       <!-- Filteri -->
+       <div class="container sviProizvodi-meni " id = 'filterMenu' style="display: none; background-color: rgba(159, 159, 159, 0.074);">
       
+           <form action="" method="" >
+                <div class="row" >
+
+                    <!-- Naziv -->
+                    <div class="col-sm-1 mt-1">  Naziv:</div>
+                    <div class="col-sm-2">
+                        <input type="text" name="naziv" class="form-control" >
+                    </div>
 
 
-        
-        
-        
+
+                    <!-- Stauts -->
+                    <div class="col-sm-1 mt-1">Status:</div>
+                    <div class="col-sm-2">
+                        <select name="status" class="form-control">
+                            <option value="">Na čekanju</option>
+                            <option value="">Prihvaćeno</option>
+                            <option value="">Odbijeno</option>
+                            <option value="">Poslato</option>
+                            <option value="">Isporučeno</option>
+                        </select>
+                    </div>
+
+
+
+                    <!-- Sort -->
+                    <div class="col-sm-1 mt-1">Prikaži prvo:</div>
+                    <div class="col-sm-2">
+                        <select name="sort" class="form-control">
+                            <option value="">Najnovije</option>
+                            <option value="">Najstarije</option>
+                        </select>
+                    </div>
+
+                    <br> <br>
+                    <div class="col-sm-3 ">
+                        
+                        <button class="btn  btn-info mr-3">Primeni</button>
+                        <button class="btn btn-secondary ml-3  ">Resetuj</button>
+                    </div>
+                </div>
+            </form>
+       </div>
+       <!-- /Filteri -->
+
+
+
+
+       
+       
+
+
+
+
+       <!-- Sve porudzbine -->
+        <div class="container mt-2">
+         
+            <!-- Jedan proizvod -->
+            <div class="container" >
+                <div class="row d-flex " >
+
+                        <!-- Proizvod -->
+                        <div class="col-sm-12 mb-2   mt-2" style="background-color: rgba(0, 0, 0, 0.027); padding: 30px; border-radius: 6px;">
+                            <!-- Sve informacije -->
+                            <div class="row">
+
+
+                                <!-- Info proizvoda -->    
+                                <div class="col-sm-4">
+                                    
+                                    <div class="row">
+
+                                        <!-- Slika  -->
+                                        <div class="col-sm-12 col-xl-12 col-lg-12 mb-3">
+                                            <img src='../Templejti/static/img/Artikli/s1.jpg' class="col-sm-11" width="240px" height="260px" >
+                                        </div>
+                                        <!-- /Slika  -->
+
+                                        <!-- Podaci -->
+                                        <div class="col-sm-10 text-center">
+                                            <div class="text-info h6"><a href = '#' class="text-info">Muski nike dux</a></div>
+                                            <div class="">Cena : <span class="btn-sm btn-info" >3400 RSD</span></div>
+                                        </div>
+                                        <!-- /Podaci -->
+                                        
+                                    </div>
+
+                                </div>
+                                <!-- /Info proizvoda -->    
+
+                                
+
+                                <!-- Info kupca -->
+                                <div class="col-sm-8 mt-3">
+
+                                    <!-- Ime i prezime kupca -->
+                                    <div class="row "> 
+                                        <div class="col-sm-4 ">Kupac :</div>  <div class="col-sm-5 ml-3 h6 text-info"><a href = ''>Janko jankovic</a></div>     
+                                    </div>
+
+
+                                    <!-- Adresa -->
+                                    <div class="row "> 
+                                        <div class="col-sm-4">Adresa :</div>  <div class="col-sm-5 ml-3  h6 text-info">Beograd 203312 - Cara Dušana  67</div>     
+                                    </div>
+                                    
+                                    <!-- Broj telefona -->
+                                    <div class="row "> 
+                                        <div class="col-sm-4">Broj telefona :</div>  <div class="col-sm-5 ml-3  h6 text-info">063xxxxx</div>     
+                                    </div>
+
+                                  
+
+                                    <hr>
+
+
+                                    <!-- Izabrana boja -->
+                                    <div class="row "> 
+                                        <div class="col-sm-4">Izabrana boja :</div>  <div class="col-sm-5 ml-3  h6 text-info">Zelena</div>     
+                                    </div>
+                                   
+                                    <!-- Izabrana veličina -->
+                                    <div class="row "> 
+                                        <div class="col-sm-4">Izabrana velicina :</div>  <div class="col-sm-5 ml-3  h6 text-info">L</div>     
+                                    </div>
+                                    
+
+                                    <div class="row "> 
+                                        <div class="col-sm-4">IzabranI pol :</div>  <div class="col-sm-5 ml-3  h6 text-info">Muški</div>     
+                                    </div>
+                                  
+
+                                    <hr>
+
+                                    <div class="row "> 
+                                        <div class="col-sm-4"> Količina :</div>  <div class="col-sm-5 ml-3  h6 text-success">3</div>     
+                                    </div>
+
+
+                                     <div class="row "> 
+                                        <div class="col-sm-4">Ukupno za uplatu :</div>  <div class="col-sm-2 ml-3  h6 btn-sm text-center btn-info">72000 RSD</div>     
+                                    </div>
+
+                                    <hr>
+                                    <div>Status : Na čekanju</div>
+                                </div>
+                                <!-- /Info kupca -->
+
+                            </div>
+                            <!-- Sve informacije -->
+                            
+                            <div class="row d-flex justify-content-center mt-3">
+                                <button class="btn mr-2 btn-primary  col-sm-3" >Prihvati</button><br>
+                                <button class="btn mr-2 btn-danger col-sm-3">Odbij</button>
+                            </div>
+
+                        </div>
+                        <!-- /Proizvod -->     
+
+                     
+
+
+                        
+                        
+                        
+                        
+                        
+
+
+
+                </div>
+            </div>
+            <!-- Jedan proizvod -->
+
+
+
+            
+
+
+        </div>
+       <!-- Sve porudzbine -->
+
+
+
+
+
         
     </div>
     <!-- /Sadržaj -->

@@ -1,0 +1,15 @@
+Na admin panuli >>>
+	- Osmisliti kako će bit status proizvoda poslato odnosno isporučeno.
+	- Razmilsiti šta ću sa dugmićima.
+	- Napraviti paginaciju
+	- Videti kako ću da implementiran brisanje
+	- Pogledati izbor meni
+	- Osmisliti kako ću da dodajem odnosno menjam i brišem kategoriju sa stranicom za kategorije.:
+				- Sve će se desavati na novoj str kao prikaz tabela
+				- Pomoću modalla će se vršiti dodavanje izmena i brisanje
+	- Povezati sve buttone za izbor kog menija. (Plavi buttoni)
+
+Na moj profil >>>
+	- Promeniti izgled kartica
+	- Namestiti brisanje i izmena profila nekako
+	- I videti sta jos treba!!!!111
