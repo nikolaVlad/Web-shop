@@ -26,8 +26,8 @@
         <!-- /Scroll Up Button -->
 
         
-          <!-- Navigation -->
-          <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
             <!-- Kontejner navigacije -->
             <div class="container-fluid">
                 
@@ -235,7 +235,7 @@
 
 
                         <!-- Registruj se -->
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a href="../profil/registracija.html" class = "nav-link text-info" style="cursor: pointer;" > Registruj se</a>
                         </li>
 
@@ -380,11 +380,228 @@
             <!-- /Kontejner navigacije -->
         </nav>
         <!-- /Navigation -->
-      
+        
+               <!-- Naslov -->
+               <div class="container mt-5 mb-4">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <span class="h4"> Admin panel </span>
+                        <hr class="">
+                    </div>
+                </div>
+            </div>
+           <!-- /Naslov -->
+    
+           <!-- Izbor meni  -->
+           <div class="container">
+                <div class="row ">
+    
+                    <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                        <a href='../admin_sekcija.html' class="btn  btn-outline-info w-100">Sve porudžbine</a>
+                    </div>
+    
+    
+                    <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                        <a href = '/Templejti/kategorije/sve_kategorije.html' class="btn  btn-info w-100">Kategorije</a>
+                    </div>
+    
+                    <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                        <a href = '' class="btn  btn-outline-info w-100">Novi proizvod</a>
+                    </div>
+    
+                    <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                        <button class="btn  btn-outline-info w-100">Proizvodi</button>
+                    </div>
+                </div>
+           </div>
+           <!-- Izbor meni -->   
 
 
+           <!-- Filtriranje -->
+           <div class="container mt-3 mb-4">
+               
+                   
+
+                        <!--  -->
+                        <div class="row ">
+                            <form action="" class=" form-inline"></form>
+
+                                <!-- Pretrazivanje -->
+                                <div class="col-sm-4 mt-3 mb-2">
+
+                                    <div class="d-flex" >
+                                        <input type="text" name="pretrazi" placeholder="Pretraži kategorije..." class="  w-100 noBorder" style="border-bottom: 1px solid black;">
+                                        <button type="submit" class=" noBorder" style="margin-left: -33px;" ><i class="fas fa-search"></i></button>
+                                    </div>
+
+                                </div>
+                                <!-- /Pretrazivanje -->
+
+                                <!-- Sortiranje -->
+                                <div class="col-sm-4 mt-2 mb-3">
+                                    <input name = 'sort' value = 'AZ' hidden>
+                                    <button type="submit" class="btn btn-sm btn-outline-secondary mt-1  w-100 ">A - Z <i class="fas fa-arrows-alt-v"></i></button> 
+                                </div>
+                                <!-- /Sortiranje -->
+                            </form>
+
+
+                            <!-- Nova kategorija -->
+                            <div class="col-sm-4 mt-2">
+                                <input name = 'sort' value = 'AZ' hidden>
+                                <a class="  form-control noBorder text-center text-success" role="button" data-toggle="modal" data-target="#modalNovaKategorija">
+                                    <i class="fas fa-plus mr-3"></i >Nova kategorija
+                                </a>
+                                
+                                <!-- Modal za dodavanje kategorije -->
+                                <div class="modal fade" id="modalNovaKategorija" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                      <div class="modal-content ">
+                                        <div class="modal-header bg-dark text-white">
+                                          <h5 class="modal-title" id="exampleModalLongTitle">Dodavanje kategorije</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class="text-white bg-dark">&times;</span>
+                                          </button>
+                                        </div>
+
+
+                                        <div class="modal-body">
+                                            <form action="">
+                                                Unesite naziv kategorije : <input type="text" name="naziv" class="form-control mt-3 mb-3" >
+                                                <div class="small text-danger" hidden>Kategorija sa ovim nazivom već postoji!</div>
+                                            
+                                        </div>
+
+
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Otkaži</button>
+                                          <button type="submit" class="btn btn-primary">Dodaj</button>
+                                        </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                
+                            </div>
+                       
+                            
+                        </div>
+                    
+                
+
+                    
+           </div>
+           <!-- Filtriranje -->
+          
+
+
+           <!-- Lista kategorija -->
+           <div class="container mt-2 ">
+
+
+                <!-- Red kategorija -->
+                <div class="row" style=" margin-left: 20px; margin-right: 20px;">
+                    
+                    <!-- Jedna kategorija -->
+                    <div class="col-lg col-sm-6 text-center" style="background-color: rgba(169, 169, 169, 0.258);  margin-right: 10px; margin-bottom: 10px;">
+
+                        <!-- Naziv kategorije -->
+                        <a href = '' class="h6 text-dark" >Jakne</a> 
+
+
+                        <!-- Izmeni kategoriju -->
+                        <button type="button" class="btn noBorder" data-toggle="modal" data-target="#modalIzmenaKategorije"><i class = 'far fa-edit text-info'></i></button>
+
+                            <!-- Modal za izmenu -->
+                            <div class="modal fade" id="modalIzmenaKategorije" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark text-white">
+                                    <h5 class="modal-title bg-dark " id="exampleModalLongTitle">Izmena kategorije</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="text-white">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body text-left ">
+                                        <form action="">
+                                            Strani naziv : <input type="text" name="" class="form-control" ><br>
+                                            <span class="h6"> Novi naziv :</span> <input type="text" name="" class="form-control" >
+                                            <div class="text-left small text-danger">Kategorija sa ovim nazivom već postoji!</div>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Otkaži</button>
+                                    <button type="submit" class="btn btn-primary">Sačuvaj</button>
+
+                                    </form>
+
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+
+                        <!-- Obriši kategoriju -->
+                        <button type="button" class="btn noBorder" data-toggle="modal" data-target="#modalBrisanjeKategorije"><i class = 'fas fa-trash text-danger'></i></button>
+                             
+                        
+                            <!-- Modal za izmenu -->
+                             <div class="modal fade" id="modalBrisanjeKategorije" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-dark text-white">
+                                    <h5 class="modal-title bg-dark " id="exampleModalLongTitle">Brisanje kategorije</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="text-white">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body text-left p-3">
+                                        Da li ste sigurni da želite da obrišete kategoriju : <span class="text-danger h6">Kape</span>
+                                    </div>
+                                    <div class="pl-3 pb-3 text-left">
+                                        <span class="small "> </span> 
+                                        <span class="text-info">
+                                            Ako postoje proizvodi u datoj kategoriji, biće bespovratno obrisani!!!
+                                        </span>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Otkaži</button>
+                                    <form action="/obrisano/:idKategorije">
+                                        <button type="submit" class="btn btn-danger">Obriši</button>
+                                    </form>
+
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+                    <!-- /Jedna kategorija -->
+                    
+                    
+                    
+                    
+                </div>
+                <!-- /Red kategorija -->
+
+           </div>
+           <!-- Lista kategorija -->
         
+         
+           
+            <!-- Paginacija -->
+            <ul class="pagination d-flex justify-content-center mt-3">
+                <li class="page-item disabled"><a class="page-link" href="#"><</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">></a></li>
+            </ul>
+            <!-- /Paginacija -->
         
+          
+
         
         
     </div>
