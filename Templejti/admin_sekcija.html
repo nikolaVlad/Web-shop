@@ -407,17 +407,17 @@
                 </div>
 
                 <div class="col-sm-12 col-xl-3 mt-2 mb-2">
-                    <a href = '' class="btn  btn-outline-info w-100">Novi proizvod</a>
+                    <a href = '../Templejti/proizvodi/novi_proizvod.html' class="btn  btn-outline-info w-100">Novi proizvod</a>
                 </div>
 
                 <div class="col-sm-12 col-xl-3 mt-2 mb-2">
-                    <button class="btn  btn-outline-info w-100">Proizvodi</button>
+                    <a href = '/Templejti/proizvodi/svi_proizvodi.html' class="btn  btn-outline-info w-100">Svi proizvodi</a>
                 </div>
             </div>
        </div>
        <!-- Izbor meni -->        
         
-
+       
         <!-- Filter button  -->
         <div class="container pl-5 pr-5  pb-2 pt-2 "  style="background-color: rgba(255, 255, 255, 0.061);">
             <div class=" mt-2 mb-2 text-center ">
@@ -458,7 +458,7 @@
 
 
                     <!-- Sort -->
-                    <div class="col-sm-1 mt-1">Prikaži prvo:</div>
+                    <div class="col-sm-1 mt-1">Prvo:</div>
                     <div class="col-sm-2">
                         <select name="sort" class="form-control">
                             <option value="">Najnovije</option>
@@ -477,9 +477,47 @@
        </div>
        <!-- /Filteri -->
 
+       <!-- Akcije -->
+       <div class="container mt-1 mb-4">
+           <hr>
+
+            <form action="">
+                <div class="row ">
+                    <div class="col-sm-12 col-lg-4 text-center  mt-3">
+                        Akcija : 
+                    </div>
 
 
+                    <div class="col-sm-12 col-lg-4 mt-3">
+                       <select name="akcija" class="form-control" >
+                          <option value="">
+                              Obriši sve odbijene porudžbine.
+                          </option>
 
+                          <option value="">
+                            Obriši sve isporučene porudžbine.
+                        </option>
+
+                        <option value="">
+                            
+                        </option>
+
+
+                       </select>
+                    </div>
+
+
+                    <div class="col-sm-12 col-lg-4 d-flex justify-content-center mt-3" >
+                        <button type="submit" class="btn btn-outline-success col-10">Primeni</button>  
+                    </div>
+
+
+                </div>
+            </form>
+            <hr>
+       </div>
+
+       <!-- Akcije -->
        
        
 
@@ -576,7 +614,41 @@
                                     </div>
 
                                     <hr>
-                                    <div>Status : Na čekanju</div>
+                                    <div >
+                                        <div class = ' col-sm-3'>
+                                        Status : 
+                                        <b>Na čekanju</b>
+                                        </div>
+                                    </div>
+
+
+                                     <!-- Promena statusa -->
+                                        <div class="row mt-3 d-flex justify-content-start">
+                                            <form action="" class="form-inline mr-4  ">
+                                            
+
+                                                <input name = '' value = '' hidden>
+                                                <input name = 'status' value = '' hidden>
+                                                <button type="submit" class="ml-5 btn btn-warning col-sm-7 "><i class="far fa-paper-plane "></i><br>Poslato</button>
+                                            </form>
+
+                                            <form action="" class="form-inline  ">
+                                            
+
+                                                <input name = '' value = '' hidden>
+                                                <input name = 'status' value = '' hidden>
+                                                <button type="submit" class=" btn btn-success col-sm-12"><i class="fas fa-truck"></i><br> Isporučeno </button>
+                                            </form>
+
+                                        </div>
+                                    <!-- /Promena statusa -->
+                                        
+
+                                       
+
+                                        
+
+                                    
                                 </div>
                                 <!-- /Info kupca -->
 
@@ -587,6 +659,14 @@
                                 <button class="btn mr-2 btn-primary  col-sm-3" >Prihvati</button><br>
                                 <button class="btn mr-2 btn-danger col-sm-3">Odbij</button>
                             </div>
+
+
+
+
+                            <div>
+                                <button class="btn text-danger"><i class="fas fa-trash"></i> Obriši</button> 
+                            </div>
+
 
                         </div>
                         <!-- /Proizvod -->     
@@ -605,6 +685,7 @@
                 </div>
             </div>
             <!-- Jedan proizvod -->
+            
 
 
 
@@ -615,6 +696,14 @@
        <!-- Sve porudzbine -->
 
 
+
+         <!-- Paginacija -->
+         <ul class="pagination d-flex justify-content-center mt-3">
+            <li class="page-item disabled"><a class="page-link" href="#"><</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">></a></li>
+        </ul>
+        <!-- /Paginacija -->
 
 
 

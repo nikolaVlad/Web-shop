@@ -9,33 +9,33 @@ Rute :
 	#) Registruj se (Novi profil) !!! 			/registracija
 
 	
-	#) Moj profil !!! 				/mojProfil
-	#) Izmena profila 				/mojProfil/izmena_profila
-	#) Brisanje profila 				/mojProfil/brisanje_profila
+	#) Moj profil !!! [REŠENO]			/mojProfil
+	#) Izmena profila [REŠENO]			/mojProfil/izmena_profila
+	#) Brisanje profila [REŠENO]			/mojProfil/brisanje_profila
 
-	#) Upravljanje porudzbinama			/adminSekcija
+	#) Upravljanje porudzbinama	[REŠENO]		/adminSekcija
 
-	#) Sve kategorije ( SHOP )  !!!			/proizvodi?kategorija= '' ||  /svi_proizvodi
-	#) Kategorija !!!				/svi_proizvodi?kategorija="Naziv kategorije"
-	#) Nova kategorija  !!!     -MODAL		/adminSekcija/novaKategorija
-	#) Izmena kategorije !!! -MODAL		/adminSekcija/:kategorijaId/izmena_kategorije (Modal)
-	#) Brisanje kategorije !!! -MODAL		/kategorija/:id/brisanje_kategorije
+	#) Sve kategorije ( SHOP )  !!!	[REŠENO]		/proizvodi?kategorija= '' ||  /svi_proizvodi
+	#) Kategorija !!! [REŠENO]			/svi_proizvodi?kategorija="Naziv kategorije"
+	#) Nova kategorija  !!!     -MODAL [REŠENO]	/adminSekcija/novaKategorija
+	#) Izmena kategorije !!! -MODAL[REŠENO]	/adminSekcija/:kategorijaId/izmena_kategorije (Modal)
+	#) Brisanje kategorije !!! -MODAL[REŠENO]	/kategorija/:id/brisanje_kategorije
 
 
-	#) Proizvod !!!				/proizvodi/proizvod/:id
-	#) Proizvodi !!!				/proizvodi 
-	#) Novi proizvod !!!				
+	#) Proizvod !!! [REŠENO]			/proizvodi/proizvod/:id
+	#) Proizvodi !!! [REŠENO]			/proizvodi 
+	#) Novi proizvod !!!	[REŠENO]			
 		- Informacije o proizvodu !!!		/proizvodi/novi_proizvod
 		- Slike proizvoda !!!			/proizvodi/proizvod/:id/slike (@)
 
-	#) Izmena proizvoda				
+	#) Izmena proizvoda	[REŠENO]			
 		- Informacije o proizvodu		/proizvodi/proizvod/:id/izmena_proizvoda
 		- Slike proizvoda			/proizvodi/proizvod/:id/slike (@)
 
-	#) Brisanje proizvoda 			/proizvodi/proizvod/:id/brisanje_proizvoda
+	#) Brisanje proizvoda [REŠENO]		/proizvodi/proizvod/:id/brisanje_proizvoda
 
 
-	#) Sve poruđbine !!!				/mojProfil/moja_korpa
+	#) Sve poruđbine !!!	[REŠENO]			/mojProfil/moja_korpa
 
 16
 	
