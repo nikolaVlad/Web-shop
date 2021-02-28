@@ -410,7 +410,43 @@
 
                     <!-- Lični podaci -->
                     <div class="col-sm-6 mt-3 mb-3">
-                        <div class="h5 text-dark">Lični podaci <i class="fas fa-edit small text-info"></i> <hr></div>
+                        <div class="h5 text-dark">
+                            Lični podaci 
+                            <button class="noBorder" type="button" data-target="#modalEditPersonalData" data-toggle="modal"><i class="fas fa-edit small text-info"></i> </button>  <hr>
+                            
+                            <!-- Modal for Edit personal data -->
+                            <div class="modal fade" id="modalEditPersonalData" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark text-light">
+                                      <h6 class="modal-title " id="exampleModalLongTitle">Personal data</h6>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="text-white">&times;</span>
+                                      </button>
+                                    </div>
+
+                                    <!-- Form -->
+                                        <form action="">
+                                            <div class="modal-body">
+                                                First Name : <input type="text" name="firstName" class="form-control mt-2 mb-3"> 
+                                                Last Name : <input type="text" name="lastName" class="form-control mt-2 mb-3"> 
+                                            </div>
+                                            <div class="modal-footer">
+                                        
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        
+                                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                        </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- Modal for Edit personal data -->                        
+                        
+                        </div>
+
+
+
 
                         <!-- Ime -->
                         <div class="row ">
@@ -426,9 +462,46 @@
                     </div>
                     <!-- /Lični podaci -->
 
+
+
                    <!-- Kontakt podaci -->
                     <div class="col-sm-6 mt-3 mb-3">
-                        <div class="h5 text-dark">Kontakt podaci  <i class="fas fa-edit small text-info"></i><hr></div>
+                        <div class="h5 text-dark">
+                            Kontakt podaci  
+                            <button class="noBorder" data-toggle="modal" data-target="#modalEditContactData"> <i class="fas fa-edit small text-info"></i> </button> <hr>
+                            
+                            
+                            <!-- Modal for Edit contact data -->
+                            <div class="modal fade" id="modalEditContactData" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark text-light">
+                                      <h6 class="modal-title " id="exampleModalLongTitle">Contact data</h6>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="text-white">&times;</span>
+                                      </button>
+                                    </div>
+
+                                    <!-- Form -->
+                                        <form action="">
+                                            <div class="modal-body">
+                                                Phone : <input type="text" name="phone" class="form-control mt-2 mb-3"> 
+                                                Email : <input type="text" readonly class="form-control mt-2 mb-3"> 
+                                            </div>
+                                            <div class="modal-footer">
+                                        
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        
+                                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                        </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- Modal for Edit personal data -->       
+
+
+                        </div>
 
                         <!-- Telefon -->
                         <div class="row ">
@@ -457,7 +530,44 @@
 
                     <!-- Adresa podaci -->
                     <div class="col-sm-6 mt-3 mb-3">
-                        <div class="h5 text-dark">Adresa stanovanja  <i class="fas fa-edit small text-info"></i><hr></div>
+                        <div class="h5 text-dark">
+                            Adresa stanovanja  
+                            <button class="noBorder" data-toggle="modal" data-target="#modalEditAddressData"> <i class="fas fa-edit small text-info"></i> </button> <hr>
+                            
+                            <!-- Modal for Edit address data -->
+                            <div class="modal fade" id="modalEditAddressData" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark text-light">
+                                      <h6 class="modal-title " id="exampleModalLongTitle">Contact data</h6>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="text-white">&times;</span>
+                                      </button>
+                                    </div>
+
+                                    <!-- Form -->
+                                        <form action="">
+                                            <div class="modal-body">
+                                                City : <input type="text" name="city" class="form-control mt-2 mb-3"> 
+                                                Postal number : <input type="number" name = 'postNumber' class="form-control mt-2 mb-3"> 
+                                                Street :    <input type="text" name = 'street' class="form-control mt-2 mb-3"> 
+                                                Street number : <input type="number" name = 'streetNumber' class="form-control mt-2 mb-3"> 
+
+                                            </div>
+                                            <div class="modal-footer">
+                                        
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        
+                                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                        </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- Modal for Edit address data --> 
+
+                        
+                        </div>
 
                         <!-- Grad -->
                         <div class="row ">
@@ -490,7 +600,44 @@
 
                    <!-- Kontakt podaci -->
                     <div class="col-sm-6 mt-3 mb-1">
-                        <div class="h5 text-dark">Lozinka  <i class="fas fa-edit small text-info"></i><hr></div>
+                        <div class="h5 text-dark">
+                            Lozinka  
+                            <button class="noBorder" data-toggle="modal" data-target="#modalEditPass"> <i class="fas fa-edit small text-info"></i> </button> <hr>
+
+                              <!-- Modal for Edit address data -->
+                              <div class="modal fade" id="modalEditPass" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark text-light">
+                                      <h6 class="modal-title " id="exampleModalLongTitle">Contact data</h6>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" class="text-white">&times;</span>
+                                      </button>
+                                    </div>
+
+                                    <!-- Form -->
+                                        <form action="">
+                                            <div class="modal-body">
+                                               Old password : <input type="password" name="oldPass" class="form-control mb-3 mt-2">
+
+                                               New password : <input type="password" name="newPass" class="form-control mb-3 mt-2">
+
+                                               Retype new password : <input type="password" name="retypeNewPass" class="form-control mb-3 mt-2">
+                                            
+
+                                            </div>
+                                            <div class="modal-footer">
+                                        
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        
+                                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                        </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            <!-- Modal for Edit address data --> 
+
                     </div>
                     <!-- /Kontakt podaci -->
 
@@ -513,7 +660,28 @@
             <hr class="container">
                 <!-- Red 1 -->
                 <div class="row mt-2 mb-2 " style="padding: 10px;">
-                    <button class="btn btn-outline-danger col-sm-12 col-lg-2"> Brisanje profila </button>
+                    <button class="btn btn-outline-danger col-sm-12 col-lg-2" data-target="#modalDeleteProfile" data-toggle="modal"> Delete profile </button>
+
+                    <div class="modal fade" id="modalDeleteProfile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header bg-dark text-light">
+                              <h5 class="modal-title " id="exampleModalLongTitle">Delete profile</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body text-center">
+                                Are you sure want to <b class="text-danger">delete</b> yout profile?
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="submit" class="btn btn-danger">Delete</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                 </div>
         </div>
 

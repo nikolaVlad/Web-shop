@@ -414,13 +414,38 @@
 
                                     <div class="text-primary btn  btn-dark col-xl-5 col-sm-12 mb-1 ">
                                         <i class="fas fa-upload  text-info  "></i>
-                                        <span class="text-white ">Dodaj sliku</span> 
+                                        <span class="text-white ">Add</span> 
                                     </div> 
 
 
-                                    <div class="text-danger btn btn-dark col-xl-5 col-sm-12">
-                                        <i class="fas fa-trash text-danger  mt-1"></i> 
-                                        <span class="text-white ">Ukloni sliku</span> 
+                                    <div class="text-danger btn btn-dark col-xl-5 col-sm-12 mb-1">
+                                        <button  data-toggle="modal" data-target="#modalRemovePic" type="button" class="noBorder" >
+                                            <i class="fas fa-trash text-danger  mt-1"></i> 
+                                            <span class="text-white">Remove</span> 
+                                        </button>
+
+                                        <!-- Modal for remove pics -->
+                                        <div class="modal fade" id="modalRemovePic" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                              <div class="modal-content">
+                                                <div class="modal-header bg-dark text-light">
+                                                  <h5 class="modal-title " id="exampleModalLongTitle">Remove picture</h5>
+                                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" class="text-white">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body text-dark">
+                                                    Are you sure want to <b> remove </b> this picture?
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                  <button type="submit" class="btn btn-danger">Remove</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <!-- Modal for remove pics -->
+
                                     </div> 
                                 </div>
                             </div>
@@ -429,6 +454,9 @@
 
                     </div>
                     <!-- /Mesto za sliku1 -->
+
+
+
 
                     <!-- Mesto za sliku1 -->
                     <div class="col-lg-4 col-sm-12 ml-5 mr-5 mt-3 mb-5 ">
