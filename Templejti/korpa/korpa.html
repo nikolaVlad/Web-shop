@@ -386,57 +386,55 @@
 
 
         <!-- Naslov -->
-        <div class="container text-center mt-5">
+        <div class="container text-center mt-5" >
             <div style="font-size: larger;">Moj profil</div>
             <hr class="mr-1 ml-1">
             <div class="row">
                 <div class="col "><a href = '../profil/profil.html' class="btn btn-outline-info w-100">Podaci</a></div>
-                <div class="col"><a href = '/Templejti/korpa/korpa.html' class="btn btn-outline-info w-100">Korpa</a></div>
-                <div class="col"><a href = '#' class="btn btn-info w-100">Porudžbine</a></div>
+                <div class="col"><a href = '#' class="btn btn-info w-100">Korpa</a></div>
+                <div class="col"><a href = '/Templejti/korpa/sve_porudzbine.html' class="btn btn-outline-info w-100">Porudžbine</a></div>
+                
             </div>
+
+            
         </div>  
         <!-- Naslov -->
 
-        <br><br>
+        <br>
+        <br>
+        <br>
 
-        <!-- Filtriranje -->
-        <div class="container mt-1 mb-1" style="padding-left: 30px; padding-right: 30px;">
-            <form action="">
-                <div class="row">
-
+        
+        <!-- Action for cart -->
+        <div class="container cart-menu" >
+            <form action="" class="container">
+                <div class="row d-flex ">
                 
-
-                        <div class="col-sm-4">
-                            Prikaži prvo : 
-                            <select name="sort" class="form-control" >
-                                <option value="novije">Novije</option>
-                                <option value="starije">Starije</option>
-                            </select>
+                        <div class="col-sm-4 mt-1 mb-2">
+                            <button type="submit" class="form-control btn-secondary ">Empty the cart</button>
                         </div>
 
-
-                        <div class="col-sm-4">
-                            Status:
-                            <select name="status" class="form-control" >
-                                <option value="">Na čekanju</option>
-                                <option value="">Prihvaćeno</option>
-                                <option value="">Odbijeno</option>
-                                <option value="">Poslato</option>
-                            </select>
+                        <div class="col-sm-4 mt-1 mb-2">
+                            <input type="search" class="form-control " style="padding-left: 30px;" placeholder="Search..."> <i class="fas fa-search " style="padding-right: 2px;position: absolute; margin-top: -25px; margin-left: 7px; border-right: 1px solid;"></i>
                         </div>
 
-
-                        <div class="col-sm-4">
-                            <br>
-                            <button type="submit" class="form-control btn btn-secondary">Primeni</button>
+                        <div class="col-sm-4 mt-1 mb-2">
+                            <button type="submit" class="form-control btn-danger">Buy now</button>
                         </div>
-
-            
-
                 </div>
             </form>
         </div>
-        <!-- Filtriranje -->
+        <!-- Action for cart -->        
+
+        <!-- Num of items -->
+        <div class="container">
+            Total items : <b>10</b>
+        </div>
+
+        <!-- /Num of items -->
+
+
+
 
 
         <!-- Sve porudzbine -->
@@ -509,7 +507,6 @@
                                 </div>
 
                                 <hr>
-                                <div>Status : <b>Na čekanju</b></div>
                             </div>
                             <!-- /Info porucenog artikla -->
 
@@ -518,7 +515,7 @@
                         
                         <div class="row d-flex justify-content-center mt-3">
                             <button class="btn mr-2 btn-outline-danger col-sm-3" data-toggle="modal" data-target="#modalCancelOrder">
-                                Otkaži porudžbinu
+                                Remove 
                             </button>
 
                             <!-- Modal for Cancel order -->

@@ -390,3 +390,17 @@ body
 
 
 /* ? Stranica sa svim proizvodima */
+
+
+
+.cart-menu
+{
+ 
+   padding: 10px;
+   bottom: 0%;
+   z-index: 1000;
+   left: 10%;
+   right: 10%;
+
+  
+}
