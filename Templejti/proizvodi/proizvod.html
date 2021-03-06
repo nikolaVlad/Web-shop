@@ -19,7 +19,7 @@
    
 <!-- Stranica -->
 <div id = 'page-container'>
-    <!-- Sadržaj -->
+    <!-- Content -->
     <div id = 'content-wrap'>
         <!-- Scroll Up Button -->
         <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
@@ -384,17 +384,18 @@
     
 
 
-        <!-- Informacije -->
+        <!-- Info about article -->
         <div class="container">
 
-            <!-- Red1 -->
+
+            <!-- Row1 -->
             <div class="row">
-                <!-- Slajder -->
+                <!-- Article pics slider -->
                 <div class="col-sm-6 col-lg-6  mt-5 mb-3">
 
-                        <!-- Izmena fotografija -->
-                            <div class="proizvod-meni pl-4 text-center"><i class="fas fa-edit "></i><a href = '#' class="text-white">Izmena fotografija</a></div>
-                        <!-- /Izmena fotografija -->
+                        <!-- Btn for edit pictures -->
+                            <div class="proizvod-meni pl-4 text-center"><i class="fas fa-edit "></i><a href = '#' class="text-white"> Edit images</a></div>
+                        <!-- /Btn for edit pictures -->
 
 
                         <!--Carousel Wrapper-->
@@ -440,91 +441,91 @@
                         </a>
                         <!--/.Controls-->
                         </div>
-                        <!--/.Carousel Wrapper-->
+                        <!--/Carousel Wrapper-->
                 </div>
-                <!-- /Slajder -->
+                <!-- /Article pics slider -->
 
                 <!-- Info -->
                 <div class="col-sm-6 col-lg-6 mb-3 mt-5" >
 
-                       
-
                     <div class="container" style="font-size: 15px" >
 
-                        <!-- Izmena informacija -->
-                            <div class="proizvod-meni pl-4 text-center"><i class="fas fa-edit "></i><a href = '#' class="text-white"> Izmena informacija</a></div>
-                        <!-- /Izmena informacija -->
+                        <!-- Btn for edit info  -->
+                            <div class="proizvod-meni pl-4 text-center"><i class="fas fa-edit "></i><a href = '#' class="text-white"> Edit article data</a></div>
+                        <!-- /Btn for edit info  -->
 
                         <form action="" >
                             <!-- Naslov -->
                             <div class=" text-uppercase text-dark  text-center" style="border-radius: 0px ;background-color: rgba(123, 123, 123, 0.143); width: 100%; padding: 20px;">
-                                <span class="h5">Nike air max majica</span> <br>
-                                Cena : <span class="h6"> 2000 RSD</span>
+                                <span class="h5">Nike air max t-shirt</span> <br>
+                                Price : <span class="h6 text-danger"> 2000 RSD</span>
                             </div>
                             <br>
 
 
 
-                            <!-- Kategorija -->
+                            <!-- Category -->
                             <div class="row pl-3">
                                 <div class="col">
-                                    Kategorija :
+                                    Category :
                                 </div> 
-                                <div class="h6 col-6"><a href= ''>Majice</a></div>
+                                <div class="h6 col-6"><a href= ''>T-shirts</a></div>
                             </div>
                             <br>
 
                             <hr>
 
-                            <!-- Veličine -->
+                            <!-- Sizes -->
                             <div class="row pl-3 mb-1">
                                 <div class="col">
-                                    Dostupne veličine : 
+                                    Avaliable sizes : 
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <input  type="radio" name="velicina"  > M <input type="radio" name="velicina"  > S <input type="radio" name="velicina"  > L
+                                    <input  type="radio" name="size"  > M 
+                                    <input type="radio" name="size"  > S 
+                                    <input type="radio" name="size"  > L
                                 </div>
                             </div>
                             
 
-                            <!-- Boje -->
+                            <!-- Colors -->
                             <div class="row pl-3 mb-1">
                                 <div class="col">
-                                    Dostupne boje : 
+                                    Avaliable colors : 
                                 </div>
                                 
                                 <div class="col">
                                     <select name = "boja" class="form-control col-sm-7">
-                                        <option value="">Crna</option>
-                                        <option value="">Bela</option>
-                                        <option value="">Plava</option>
+                                        <option value="">Black</option>
+                                        <option value="">White</option>
+                                        <option value="">Blue</option>
                                         </select> 
                                 </div>
                             </div>
 
 
 
-                            <!-- Pol -->
+                            <!-- Gender -->
                             <div class="row pl-3 mb-1">
                                 <div class="col">
-                                    Pol : 
+                                    Gender : 
                                 </div>
                                 
                                 <div class="col">
-                                   Muški
+                                   Male
                                 </div>
                             </div>
 
                             <hr>
                             
-                            <!-- Količina -->
+                            <!-- Quantity -->
                             <div class="row pl-3 mb-1">
                                 <div class="col">
-                                    Količina :
+                                    Quantity :
                                 </div>
 
                                 <div class="col">
-                                    <input type="number" name="kolicina" max="10" class="form-control " style="width: 60px;">
+                                    <input type="number" name="quantity" max="10" class="form-control " style="width: 60px;">
                                 </div>
                                 
                                 
@@ -532,11 +533,11 @@
                             
                             <hr>
                               
-                            <!-- O proizvodu -->
+                            <!-- About -->
                             <div class="container mt-3 mb-5 ">
-                                <span class="text-dark h6">O proizvodu: </span>
+                                <span class="text-dark h6">About : </span>
                                 <br><br>
-                                <p>Nike majica izuzetnog kvaliteta. Pogodna za letnje dane.</p>
+                                <p>Nike sport t-shirt, for all day.</p>
                             </div>
 
 
@@ -547,8 +548,8 @@
 
 
 
-
-                            <button type="submit" class="btn btn-outline-info w-100 mt-3"> <i class="fas fa-shopping-cart "></i> Dodaj u korpu</button>
+                            <!-- Add to cart btn -->
+                            <button type="submit" class="btn btn-outline-info w-100 mt-3"> <i class="fas fa-shopping-cart "></i> Add to cart</button>
 
                         </form>
 
@@ -589,13 +590,14 @@
 
                     </div>
                 </div>
-
                 <!-- /Info -->
 
             </div>
-            <!-- /Red1 -->
+            <!-- /Row1 -->
+
+
         </div>
-        <!-- /Informacije -->
+        <!-- /Info about article -->
 
 
      
@@ -608,7 +610,7 @@
         
         
     </div>
-    <!-- /Sadržaj -->
+    <!-- /Content -->
 
 
 

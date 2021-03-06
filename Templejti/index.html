@@ -21,7 +21,7 @@
    
 <!-- Stranica -->
 <div id = 'page-container'>
-    <!-- Sadržaj -->
+    <!-- Content -->
     <div id = 'content-wrap'>
         <!-- Scroll Up Button -->
             <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
@@ -31,7 +31,7 @@
 
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light ">
-            <!-- Kontejner navigacije -->
+            <!-- Nav container -->
             <div class="container-fluid">
                 
 
@@ -402,15 +402,15 @@
               
 
             </div>
-            <!-- /Kontejner navigacije -->
+            <!-- /Nav container -->
         </nav>
         <!-- /Navigation -->
 
 
-        <!-- Slajder -->
+        <!-- Pics Slider -->
         <div class="container " style="padding: 30px; padding-left: 12%; padding-right: 12%;" >
 
-            <!-- Slajdovi -->
+            <!-- Sliders -->
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false"
             onmouseover="showArticleInfo('infoArtikal1', 'infoArtikal2')"
             onmouseout="hideArticleInfo('infoArtikal1', 'infoArtikal2')">
@@ -424,27 +424,27 @@
                     <!-- ITEM 1-->
                     <div class="carousel-item active">
 
-                        <!-- Informacije -->
+                        <!-- Information about article -->
                             <div class=" info-artikal " id = "infoArtikal1">
-                                <!-- Forma za dodavanje u korpi -->
+                                <!-- Form for adding to cart -->
                                 <form action = "#" method = "POST">
 
-                                    <!-- Naziv artikla -->
+                                    <!-- Article name -->
                                     <div class="row">
-                                        <!--Nevidljivo polje za Id artikla -->
+                                        <!--Hidden field for Article id -->
                                             <input name = "id" value ="" hidden>
-                                        <!--Nevidljivo polje za Id artikla -->
+                                        <!--Hidden field for Article id -->
 
                                         <div class="col-12 text-center "> <b class="text-primary"> Nike airmax dux</b></div>
                                     </div> 
-                                    <!-- /Naziv artikla-->
+                                    <!-- /Article name-->
 
-                                    <!-- Red 1--> 
+                                    <!-- Row 1--> 
                                     <div class="row">
 
-                                        <!-- Velicina -->
+                                        <!-- Size -->
                                         <div class="col-6 text-center">
-                                            Veličina : 
+                                            Size : 
                                             <div class="text-info">
                                                 <input type="radio" name = "velicina" value = "" > S
                                                 <input type="radio" name = "velicina" value = ""checked> M
@@ -452,77 +452,79 @@
                                                 <input type="radio" name = "velicina" value = ""> XL
                                             </div>
                                         </div>
-                                        <!-- /Velicina -->
+                                        <!-- /Size -->
 
 
 
-                                        <!-- Boja -->
+                                        <!-- Color -->
                                         <div class="col-6 text-center">
-                                            Boja :  
+                                            Color :  
                                             <select class="form-select text-white" style="background-color: transparent; border: none;" name = "boja">
                                                 <option class="text-dark">Crvena</option>
                                                 <option class="text-dark">Crna</option>
                                                 <option class="text-dark">Zuta</option>
                                             </select>
                                         </div>
-                                        <!-- /Boja -->
+                                        <!-- /Color -->
 
                                     
                                     </div>
-                                    <!-- /Red 1--> 
+                                    <!-- /Row 1--> 
 
 
 
-                                    <!-- Red 2-->
+                                    <!-- Row 2-->
                                     <div class="row mt-2">
 
-                                        <!-- Pol -->
+                                        <!-- Gender -->
                                         <div class="col-6 text-center">
-                                            Pol : <b class="text-info">Muški</b>
+                                            Gender : <b class="text-info">Men</b>
                                         </div>
-                                        <!-- /Pol--> 
+                                        <!-- /Gender--> 
 
 
-                                        <!-- Cena -->
+                                        <!-- Price -->
                                         <div class="col-6 text-center">
-                                            Cena : <b class="text-info"> 3200 RSD</b>
+                                            Price : <b class="text-info"> 3200 RSD</b>
                                         </div>
-                                        <!-- /Cena -->
+                                        <!-- /Price -->
 
                                     </div>
-                                    <!-- /Red 2--> 
+                                    <!-- /Row 2--> 
 
+                                    <!-- Quantity -->
                                     <div class="row mt-2">
                                         <div class="col-6 text-center">
-                                            Količina : 
+                                            Quantity : 
                                             <input type="number" value="1" class="noBorder text-info " max="10" min="1" style="width: 40px;" >
                                         </div>
                                     </div>
+                                    <!-- /Quantity -->
 
 
                                     <!-- Red 3 Submit -->
                                     <div class="row mt-4">
                                         <div class="col-12 d-flex justify-content-center">
                                             <button type="submit" class="btn btn-outline-info" style="width: 100%;"><i class="fas fa-shopping-cart text-warning"></i>
-                                                Naruči odmah! 
+                                               Add to cart
                                         </div>
                                     </div>
                                     <!-- /Red3 Submit-->
 
 
                                 </form>
-                                <!-- /Forma za dodavanje u korpi -->
+                                <!-- /Form for adding to cart -->
 
 
                             </div>
-                            <!-- /Informacije-->
+                        <!-- /Information about article-->
 
 
-                            <!-- Slika artikla-->
+                            <!-- Articles img -->
                                 <a href="/artikal">
                                     <img class="d-block w-100 slajd-item" src="/Templejti/static/img/Artikli/s3.jpg" alt="Third slide">
                                 </a>
-                            <!-- /Slika artikla-->
+                            <!-- /Articles img -->
                             
 
                     </div>
@@ -641,35 +643,36 @@
                 
 
 
-                <!-- Prethodna -->
+                <!-- Previous -->
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span aria-hidden="true"><i class="fas fa-chevron-circle-left text-dark"></i></span>
-                <span class="sr-only">Previousa</span>
+                <span class="sr-only">Previous</span>
                 </a>
-                <!-- /Prethodna -->
+                <!-- /Previous -->
 
 
-                <!-- Sledeća -->
+                <!-- Next -->
                 <a class="carousel-control-next " href="#carouselExampleControls" role="button" data-slide="next">
                 <span aria-hidden="true"><i class="fas fa-chevron-circle-right text-dark"></i></span>
                 <span class="sr-only ">Next</span>
                 </a>
-                <!-- /Sledeća -->
+                <!-- /Next -->
 
 
 
             </div>
-            <!-- /Slajdovi -->
+            <!-- /Sliders -->
 
 
         </div>
-        <!-- /Slajder -->
+        <!-- /Pics Slider -->
 
 
-        <!-- Kartice  -->
+        <!-- Cards  -->
         <div class="container mt-3 mb-3">
             <div class="row  ">
 
+                <!-- Card #1 -->
                 <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
 
                     <div class="card  mb-3" style="max-width: 18rem;">
@@ -681,8 +684,12 @@
                         </p>
                         </div>
                     </div>
+                    
                 </div>
+                 <!-- Card #1 -->
 
+
+                <!-- Card #2 -->
                 <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
                         
                     <div class="card  mb-3" style="max-width: 18rem;">
@@ -696,7 +703,11 @@
                     </div>
 
                 </div>
+                <!-- Card #2 -->
 
+
+
+                <!-- Card #3 -->
                 <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
                     
                     <div class="card  mb-3" style="max-width: 18rem;">
@@ -710,14 +721,16 @@
                     </div>
 
                 </div>
+                <!-- Card #3 -->
+
 
             </div>
         </div>
-        <!-- /Kartice  -->
+        <!-- /Cards  -->
 
 
     </div>
-    <!-- /Sadržaj -->
+    <!-- /Content -->
 
 
     <!-- Footer-->
@@ -730,7 +743,7 @@
                     </div>
 
                     <div class="col-lg-4 col-sm-12 text-center">
-                        Naziv sajta
+                        Site name
                     </div>
 
                     <div class="col-lg-4 col-sm-12 text-center">

@@ -382,57 +382,57 @@
         <!-- /Navigation -->
 
         
-       <!-- Naslov -->
+       <!-- Title -->
         <div class="container mt-5 mb-4">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <span class="h4"> Admin panel </span>
+                    <span class="h4"> Admin Dashboard </span>
                     <hr class="">
                 </div>
             </div>
         </div>
-       <!-- /Naslov -->
+       <!-- /Title -->
 
-           <!-- Izbor meni  -->
-           <div class="container">
-            <div class="row ">
+        <!-- Selection menu  -->
+        <div class="container">
+        <div class="row ">
 
-                <div class="col-sm-12 col-xl-3 mt-2 mb-2">
-                    <a href='../admin_sekcija.html' class="btn  btn-outline-info w-100">Sve porudžbine</a>
-                </div>
-
-
-                <div class="col-sm-12 col-xl-3 mt-2 mb-2">
-                    <a href = '/Templejti/kategorije/sve_kategorije.html' class="btn  btn-outline-info w-100">Kategorije</a>
-                </div>
-
-                <div class="col-sm-12 col-xl-3 mt-2 mb-2">
-                    <a href = '' class="btn  btn-info w-100">Novi proizvod</a>
-                </div>
-
-                <div class="col-sm-12 col-xl-3 mt-2 mb-2">
-                    <a href = '/Templejti/proizvodi/svi_proizvodi.html' class="btn  btn-outline-info w-100">Svi proizvodi</a>
-                </div>
+            <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                <a href='../admin_sekcija.html' class="btn  btn-outline-info w-100">All Orders</a>
             </div>
+
+
+            <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                <a href = '../kategorije/sve_kategorije.html' class="btn  btn-outline-info w-100">Categories</a>
             </div>
-            <!-- Izbor meni -->   
+
+            <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                <a href = '#' class="btn  btn-info w-100">New article...</a>
+            </div>
+
+            <div class="col-sm-12 col-xl-3 mt-2 mb-2">
+                <a href = '../proizvodi/svi_proizvodi.html' class="btn  btn-outline-info w-100">All articles</a>
+            </div>
+        </div>
+        </div>
+        <!-- /Selection menu -->  
         
 
-        <!-- Forma za unos podataka -->
+        <!-- Form for entry article data  -->
         <div class="container" style="margin-top: 50px;">
             <form action="" method="" class="form-group">
 
                 <div class="form-group ">
 
-                    <!-- Kategorije -->
+                    <!-- Categories -->
                      <div class="row ml-5 mr-5 mt-4 mb-4">
                         <div class="col-lg-3 mt-1 mb-2">
-                            *Kategorija: 
+                            * Category: 
                         </div>
                         <div class="col-lg-9">
                             <select name="kategorija" class="form-control">
-                                <option value="">Kategorija 1 </button></option>
-                                <option value="">Kategorija 2</option>
+                                <option value="">Category 1 </button></option>
+                                <option value="">Category 2</option>
                             </select>
                         </div>
                         
@@ -441,14 +441,16 @@
 
 
 
-                    <!-- Naziv -->
+                    <!-- Name -->
                     <div class="row ml-5 mr-5 mt-4 mb-4">
                         <div class="col-lg-3 mt-1 mb-2">
-                            *Naziv proizvoda: 
+                            * Article name: 
                         </div>
+
+                        <!-- Notice -->
                         <div class="col-lg-9">
                             <input type="text" name="naziv" class="form-control">
-                            <div class="small text-danger" hidden>Ovo polje je obavezno!</div>
+                            <div class="small text-danger" hidden>This field is required!</div>
                         </div>
                         
                     </div>
@@ -457,53 +459,53 @@
                     <!-- Opis -->
                     <div class="row ml-5 mr-5 mt-4 mb-4">
                         <div class="col-lg-3 mt-1 mb-2">
-                           Opis proizvoda (poželjno): 
+                           Article description (Should): 
                         </div>
                         <div class="col-lg-9">
                            <textarea name = 'opis' class="form-control" style="height: 150px; overflow: visible;"
-                           placeholder="Recite nešto o proizvodu koji nudite."
+                           placeholder="Say something about the product you offer."
                            ></textarea>
                         </div>
                     </div>
 
 
-                    <!-- Dostupne Veličine -->
+                    <!-- Available sizes -->
                     <div class="row ml-5 mr-5 mt-4 mb-4">
                         <div class="col-lg-3 mt-1 mb-2">
-                           Dostupne veličine:
+                            Available sizes :
                         </div>
                         <div class="col-lg-9">
                            <textarea name = 'velicina' class="form-control" style="height: 100px; overflow: visible;"
-                           placeholder="Unesite dostupne veličine proizvoda razdvojene znakom zarez ( , )."
+                           placeholder="Enter the available article sizes separated by commas (,)."
                            ></textarea>
                         </div>
                     </div>
                     
 
 
-                    <!-- Dostupne Boje -->
+                    <!-- Available Colors -->
                     <div class="row ml-5 mr-5 mt-4 mb-4">
                         <div class="col-lg-3 mt-1 mb-2">
-                           Dostupne boje:
+                            Available colors:
                         </div>
                         <div class="col-lg-9">
                            <textarea name = 'boja' class="form-control" style="height: 100px; overflow: visible;"
-                           placeholder="Unesite dostupne boje proizvoda razdvojene znakom zarez ( , )."
+                           placeholder="Enter the available article colors separated by commas (,)."
                            ></textarea>
                         </div>
                     </div>
                   
 
-                    <!-- Pol -->
+                    <!-- Gender -->
                     <div class="row ml-5 mr-5 mt-4 mb-4">
                         <div class="col-lg-3 mt-1 mb-2">
-                           Pol:
+                           Gender :
                         </div>
                         <div class="col-lg-4">
                             <select name="pol" class="form-control">
-                                <option value="m">Muški</option>
-                                <option value="ž">Ženski</option>
-                                <option value="u">Univerzalan</option>
+                                <option value="m">Male</option>
+                                <option value="ž">Female</option>
+                                <option value="u">Universal</option>
                             </select>
                         </div>
                     </div>
@@ -512,13 +514,13 @@
 
 
 
-                    <!-- Cena -->
+                    <!-- Price -->
                     <div class="row ml-5 mr-5 mt-4 mb-4">
                         <div class="col-lg-3 mt-1 mb-2">
-                            *Cena: 
+                            * Price: 
                         </div>
                         <div class="col-lg-4 ">
-                            <input type="text" name="cena" class="form-control">
+                            <input type="text" name="price" class="form-control">
 
                             <div class="d-flex justify-content-end col">
                             <select name="valuta" class="noBorder text-primary" style=" margin-top: -38px; margin-right: -12px;">
@@ -537,27 +539,27 @@
                       <!-- Pol -->
                       <div class="row ml-5 mr-5 mt-4 mb-4">
                         <div class="col-lg-3 mt-1 mb-2">
-                           Status:
+                           Status :
                         </div>
                         <div class="col-lg-4">
                             <select name="pol" class="form-control">
-                                <option value="dostupno">Dostupno</option>
-                                <option value="prikazano">Prikazano</option>
-                                <option value="sakriveno">Sakriveno</option>
+                                <option value="dostupno"> Avaliable </option>
+                                <option value="prikazano"> Shown </option>
+                                <option value="sakriveno"> Hidden </option>
                             </select>
                         </div>
                     </div>
                 </div>
 
                 <div class="d-flex justify-content-center ml-5 mr-5">
-                    <button type="submit" class="btn btn-info col-lg-6 col-sm-5">Dalje <i class="fas fa-chevron-circle-right ml-1"></i></button>
+                    <button type="submit" class="btn btn-info col-lg-6 col-sm-5">Next <i class="fas fa-chevron-circle-right ml-1"></i></button>
                 </div>
 
 
 
             </form>
         </div>
-        <!-- /Forma za unos podataka -->
+        <!-- /Form for entry data -->
 
 
         

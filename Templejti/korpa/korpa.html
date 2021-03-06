@@ -19,7 +19,7 @@
    
 <!-- Stranica -->
 <div id = 'page-container'>
-    <!-- Sadržaj -->
+    <!-- Content -->
     <div id = 'content-wrap'>
         <!-- Scroll Up Button -->
         <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
@@ -385,20 +385,20 @@
 
 
 
-        <!-- Naslov -->
+        <!-- Title -->
         <div class="container text-center mt-5" >
-            <div style="font-size: larger;">Moj profil</div>
+            <div style="font-size: larger;">My profile</div>
             <hr class="mr-1 ml-1">
             <div class="row">
-                <div class="col "><a href = '../profil/profil.html' class="btn btn-outline-info w-100">Podaci</a></div>
-                <div class="col"><a href = '#' class="btn btn-info w-100">Korpa</a></div>
-                <div class="col"><a href = '/Templejti/korpa/sve_porudzbine.html' class="btn btn-outline-info w-100">Porudžbine</a></div>
+                <div class="col "><a href = '../profil/profil.html' class="btn btn-outline-info w-100">Profile data</a></div>
+                <div class="col"><a href = '#' class="btn btn-info w-100">My cart</a></div>
+                <div class="col"><a href = '/Templejti/korpa/sve_porudzbine.html' class="btn btn-outline-info w-100">All orders</a></div>
                 
             </div>
 
             
         </div>  
-        <!-- Naslov -->
+        <!-- Title -->
 
         <br>
         <br>
@@ -406,185 +406,250 @@
 
         
         <!-- Action for cart -->
-        <div class="container cart-menu" >
-            <form action="" class="container">
-                <div class="row d-flex ">
+        <div class="container cart-menu mb-3 " >
+            <form action="" class="container" >
+                <div class="row d-flex  justify-content-center" style="background-color: rgba(255, 255, 255, 0.53);  border-top: 2px solid rgb(128, 0, 0);">
                 
-                        <div class="col-sm-4 mt-1 mb-2">
-                            <button type="submit" class="form-control btn-secondary ">Empty the cart</button>
-                        </div>
 
-                        <div class="col-sm-4 mt-1 mb-2">
-                            <input type="search" class="form-control " style="padding-left: 30px;" placeholder="Search..."> <i class="fas fa-search " style="padding-right: 2px;position: absolute; margin-top: -25px; margin-left: 7px; border-right: 1px solid;"></i>
-                        </div>
+                     <div class="col-sm-10 mt-1 mb-2">
+                        <div class="container text-center p-3" >
+                            <div class="row ">
+                                <div class="col">
+                                    Total items :
+                                </div>
+                                <div class="col">
+                                    Total cost :
+                                </div>
+                            </div> 
 
-                        <div class="col-sm-4 mt-1 mb-2">
-                            <button type="submit" class="form-control btn-danger">Buy now</button>
-                        </div>
+                            <div class="row text-center">
+                                <div class="col ">
+                                    <b>3</b>
+                                    <hr>
+                                </div>
+                                <div class="col ">
+                                    <b> 6000 RSD </b>
+                                    <hr>
+                                </div>
+                                
+                            </div> 
+
+                            
+
+                            <div class="row mt-4 d-flex justify-content-center">
+                               
+
+
+                                <!-- Btn for purshace -->
+                                <div class="col-sm-5 mb-3 ">
+                                    <form action="">
+                                        <button type="submit" class="form-control btn-danger ">Purshace </button>
+                                    </form>
+                                </div>
+                                
+
+                                <!-- Btn for empty cart -->
+                                <div class="col-sm-5 ">
+                                    <form action="">
+                                        <button type="button" class="form-control btn-secondary " data-toggle="modal" data-target="#modalEmptyCart">Empty the cart</button>
+                                    
+                                    <!-- Modal for empty cart -->
+                                    <div class="modal fade" id="modalEmptyCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header bg-dark text-light">
+                                              <h5 class="modal-title " id="exampleModalLongTitle">Empty the cart</h5>
+                                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="text-white">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Are tou sure want to <b>empty</b> the cart?
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                              <button type="submit" class="btn btn-danger">Empty</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+
+                         </div>
+                        
+                        
+
+                       
+
+
+                     </div>
+
                 </div>
             </form>
         </div>
         <!-- Action for cart -->        
+       
 
-        <!-- Num of items -->
-        <div class="container">
-            Total items : <b>10</b>
-        </div>
-
-        <!-- /Num of items -->
-
-
-
-
-
-        <!-- Sve porudzbine -->
-        <div class="container mt-2">
-         
-        <!-- Jedan proizvod -->
-        <div class="container" >
-            <div class="row d-flex " >
-
-                    <!-- Proizvod -->
-                    <div class="col-sm-12 mb-2   mt-2" style="background-color: rgba(0, 0, 0, 0.027); padding: 30px; border-radius: 6px;">
-                        <!-- Sve informacije -->
-                        <div class="row">
-
-
-                            <!-- Info proizvoda -->    
-                            <div class="col-sm-4">
-                                
-                                <div class="row">
-
-                                    <!-- Slika  -->
-                                    <div class="col-sm-12 col-xl-12 col-lg-12 mb-3">
-                                        <img src='../static/img/Artikli/s1.jpg' class="col-sm-11" width="240px" height="260px" >
-                                    </div>
-                                    <!-- /Slika  -->
-
-                                    <!-- Podaci -->
-                                    <div class="col-sm-10 text-center">
-                                        <div class="text-info h6"><a href = '#' class="text-info">Muski nike dux</a></div>
-                                        <div class="">Cena : <span class="btn-sm btn-info" >3400 RSD</span></div>
-                                    </div>
-                                    <!-- /Podaci -->
-                                    
-                                </div>
-
-                            </div>
-                            <!-- /Info proizvoda -->    
-
-                            
-
-                            <!-- Info porucenog artikla -->
-                            <div class="col-sm-8 mt-3">
-
-
-                                <!-- Izabrana boja -->
-                                <div class="row "> 
-                                    <div class="col-sm-4">Izabrana boja :</div>  <div class="col-sm-5 ml-3  h6 text-info">Zelena</div>     
-                                </div>
-                               
-                                <!-- Izabrana veličina -->
-                                <div class="row "> 
-                                    <div class="col-sm-4">Izabrana velicina :</div>  <div class="col-sm-5 ml-3  h6 text-info">L</div>     
-                                </div>
-                                
-
-                                <div class="row "> 
-                                    <div class="col-sm-4">IzabranI pol :</div>  <div class="col-sm-5 ml-3  h6 text-info">Muški</div>     
-                                </div>
-                              
-
-                                <hr>
-
-                                <div class="row "> 
-                                    <div class="col-sm-4"> Količina :</div>  <div class="col-sm-5 ml-3  h6 text-success">3</div>     
-                                </div>
-
-
-                                 <div class="row "> 
-                                    <div class="col-sm-4">Ukupno za uplatu :</div>  <div class="col-sm-2 ml-3  h6 btn-sm text-center btn-info">72000 RSD</div>     
-                                </div>
-
-                                <hr>
-                            </div>
-                            <!-- /Info porucenog artikla -->
-
-                        </div>
-                        <!-- Sve informacije -->
-                        
-                        <div class="row d-flex justify-content-center mt-3">
-                            <button class="btn mr-2 btn-outline-danger col-sm-3" data-toggle="modal" data-target="#modalCancelOrder">
-                                Remove 
-                            </button>
-
-                            <!-- Modal for Cancel order -->
-                            <div class="modal fade" id="modalCancelOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header bg-dark text-light">
-                                      <h5 class="modal-title " id="exampleModalLongTitle">Cancel order</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true" class="text-white">&times;</span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body text-center">
-                                        Are you really want to cancel this order?
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <form action="">
-                                            <input name = 'orderId' value = '' hidden>
-                                            <button type="submit" class="btn btn-danger">Cancel order</button>
-                                        </form>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            <!-- Modal for Cancel order -->
-
-                        </div>
-
-                    </div>
-                    <!-- /Proizvod -->     
-
-                 
-
-
-                    
-                    
-                    
-                    
-                    
-
-
-
+        <!-- Search article -->
+        <div class="container mt-1 mb-1">
+            <div class="row ">
+                <div class="col-sm-12 ">
+                    <form action="">
+                        <input type="search" class="form-control " name ='search' style="padding-left: 30px;" placeholder="Search in the cart..."> <i class="fas fa-search " style="padding-right: 2px;position: absolute; margin-top: -25px; margin-left: 7px; border-right: 1px solid;"></i>
+                    </form>
+                </div>
             </div>
         </div>
-        <!-- Jedan proizvod -->
+        <!-- /Search article -->
+       
 
 
 
-        
+        <!-- All orders -->
+        <div class="container mt-2">
+         
+            <!-- All Article -->
+            <div class="container" >
+                <div class="row d-flex  " >
 
+                    <!-- Article -->
+                    <div class="col-sm-12 mb-2   mt-2" style="background-color: rgba(0, 0, 0, 0.027); padding: 30px; border-radius: 6px;">
+                            <!-- All info -->
+                            <div class="row ">
+
+
+                                <!-- Article  -->    
+                                <div class="col-sm-4">
+                                    
+                                    <div class="row">
+
+                                        <!-- Pic  -->
+                                        <div class="col-sm-12 col-xl-12 col-lg-12 mb-3">
+                                            <img src='../static/img/Artikli/s1.jpg' class="col-sm-11" width="140px" height="260px" >
+                                        </div>
+                                        <!-- /Pic  -->
+
+                                        <!-- Data -->
+                                        <div class="col-sm-10 text-center">
+                                            <div class="text-info h6"><a href = '#' class="text-info">Men nike sweatshirt</a></div>
+                                            <div class="">Price : <span class="btn-sm btn-info" >3400 RSD</span></div>
+                                        </div>
+                                        <!-- /Data -->
+                                        
+                                    </div>
+
+                                </div>
+                                <!-- /Article -->    
+
+                                
+
+                                <!-- Order info -->
+                                <div class="col-sm-8 mt-3">
+
+
+                                    <!-- Selected color-->
+                                    <div class="row "> 
+                                        <div class="col-sm-4">Selected color :</div>  <div class="col-sm-5 ml-3  h6 text-info">Green</div>     
+                                    </div>
+                                
+                                    <!-- Selected size -->
+                                    <div class="row "> 
+                                        <div class="col-sm-4">Selected size :</div>  <div class="col-sm-5 ml-3  h6 text-info">L</div>     
+                                    </div>
+                                    
+
+                                    <!-- Selected gender -->
+                                    <div class="row "> 
+                                        <div class="col-sm-4">Selected gender :</div>  <div class="col-sm-5 ml-3  h6 text-info">Male</div>     
+                                    </div>
+                                
+
+                                    <hr>
+
+                                    <!-- Quantity -->
+                                    <div class="row "> 
+                                        <div class="col-sm-4"> Quantity :</div>  <div class="col-sm-5 ml-3  h6 text-success">3</div>     
+                                    </div>
+
+
+                                    <div class="row "> 
+                                        <div class="col-sm-4">Total for payment :</div>  <div class="col-sm-2 ml-3  h6 btn-sm text-center btn-info">72000 RSD</div>     
+                                    </div>
+
+                                    <hr>
+                                </div>
+                                <!-- /Order info -->
+
+                            </div>
+                            <!-- /All info -->
+                            
+
+
+                            <!-- Cance order action -->
+                            <div class="row d-flex justify-content-center mt-1">
+
+                                <!-- Btn for remove -->
+                                <button class="btn mr-2 btn-outline-danger col-sm-3" data-toggle="modal" data-target="#modalCancelOrder">
+                                    Remove 
+                                </button>
+
+                                <!-- Modal for Cancel order -->
+                                <div class="modal fade" id="modalCancelOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-dark text-light">
+                                        <h5 class="modal-title " id="exampleModalLongTitle">Cancel order</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" class="text-white">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body text-center">
+                                            Are you really want to cancel this order?
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <form action="">
+                                                <input name = 'orderId' value = '' hidden>
+                                                <button type="submit" class="btn btn-danger">Cancel order</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- Modal for Cancel order -->
+
+                            </div>
+                            <!-- /Cance order action -->
+
+                    </div>
+                    <!-- /Article -->     
+                </div>
+            </div>
+            <!-- /All Article -->
 
         </div>
-        <!-- Sve porudzbine -->
+        <!-- /All orders -->
 
 
 
 
-        <!-- Paginacija -->
+        <!-- Pagination -->
         <ul class="pagination d-flex justify-content-center">
             <li class="page-item disabled"><a class="page-link" href="#"><</a></li>
             <li class="page-item"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">></a></li>
           </ul>
-        <!-- /Paginacija -->
+        <!-- /Pagination -->
         
         
     </div>
-    <!-- /Sadržaj -->
+    <!-- /Content -->
 
 
 
