@@ -1,4 +1,0 @@
-1) Popravit istranicu sa profilom korisnika - divovi nisu lepo rasporedjeni.
-2) Gde su forme name form-kontrola nije lepo upiosan, posle dodavanja baze porpaviti i to. Pogotovo kod forme za REGISTRACIJE!!!
-
-3)!!!!!!!!! Napraviti modal za purshace, tka da korisnik moze tu da izmeni svoje podatke prilikom narucivanja.
