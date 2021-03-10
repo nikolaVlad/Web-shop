@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./static/style.css">
 
     <!--Title-->
-    <title>Templejt</title>
+    <title>ADMIN DASHBOARD</title>
 </head>
 <body>
    
@@ -27,30 +27,30 @@
 
         
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light  ">
-            <!-- Kontejner navigacije -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <!-- Nav container -->
             <div class="container-fluid">
                 
 
                 <!-- Logo -->
                 <div class="col-sm-12 col-lg-2  text-center ">
-                        <a class="navbar-brand mb-2" href="../index.html">Logo</a>
+                        <a class="navbar-brand mb-2" href="./index.html">Logo</a>
                 </div>
                 <!-- /Logo -->
 
-                <!-- Pretraživanje  -->
+                <!-- Searching  -->
                 <div class="col-lg-3 col-sm-12 d-flex justify-content-center ">
                     
-                     <form class="form-inline" action="../proizvodi/svi_proizvodi.html" method="get">
+                     <form class="form-inline" action="./proizvodi/svi_proizvodi.html" method="get">
                       
                         <div class="d-flex">
                             <button type="submit" class="noBorder"> <i class="fas fa-search mt-2"></i> </button>
-                            <input type="search" name = "kljucneReci" placeholder="Pretražite..." class=" pretrazi-polje ml-2"  id = 'shearchBar' >
+                            <input type="search" name = "kljucneReci" placeholder="Search article..." class=" pretrazi-polje ml-2"  id = 'shearchBar' >
                             
                         </div>
                     </form>
                 </div>
-                <!-- /Pretraživanje  -->
+                <!-- /Searching  -->
                
                 
                
@@ -59,19 +59,19 @@
 
                 
 
-                <!-- Ostali deo menija -->
+                <!-- Card menu -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <!-- Items -->
                     <ul class="navbar-nav mr-auto">
 
-                        <!-- Novo -->
-                        <li class="nav-item ">
-                            <a class="nav-link " href="../index.html"> Novo </a> 
+                        <!-- New (Home) -->
+                        <li class="nav-item active ">
+                            <a class="nav-link " href="./index.html"> New </a> 
                         </li>
 
                      
-                        <!-- Kategorije ( SHOP )-->
+                        <!-- Categories ( SHOP )-->
                         <li class="nav-item dropdown">
                             <span class="nav-link dropdown-toggle"  id="navbarDropdown" role="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
                             onclick="showHideShop()"
@@ -91,12 +91,12 @@
                                 <!-- Red sa kategorijama -->
                                 <div class="row pb-3">
                                     <div class="col">
-                                        <a href = "../kategorije/kategorija.html"> Kategorija</a>
+                                        <a href = "./proizvodi/svi_proizvodi.html?kategorija=kategorija0"> Category 0</a>
                                     </div>
                                     <div class="col">
-                                        <a href = "#"> Duksevi </a>
+                                        <a href = "#"> Category 1 </a>
                                     </div><div class="col">
-                                        <a href = "#">Majice</a>
+                                        <a href = "#">Category 2 </a>
                                     </div>
                                 </div>
                                 <!-- Red sa kategorijama -->
@@ -104,12 +104,12 @@
                                  <!-- Red sa kategorijama -->
                                  <div class="row pb-3">
                                     <div class="col">
-                                        <a href = "#"> Kape</a>
+                                        <a href = "#"> Category 3</a>
                                     </div>
                                     <div class="col">
-                                        <a href = "#"> Jakne </a>
+                                        <a href = "#"> Category 4</a>
                                     </div><div class="col">
-                                        <a href = "#">Šalovi</a>
+                                        <a href = "#">Category 5</a>
                                     </div>
                                 </div>
                                 <!-- Red sa kategorijama -->
@@ -117,12 +117,12 @@
                                  <!-- Red sa kategorijama -->
                                  <div class="row pb-3">
                                     <div class="col">
-                                        <a href = "#"> Naočare</a>
+                                        <a href = "#"> Category 6</a>
                                     </div>
                                     <div class="col">
-                                        <a href = "#"> Narukvice </a>
+                                        <a href = "#"> Category 7</a>
                                     </div><div class="col">
-                                        <a href = "#">Prstenje</a>
+                                        <a href = "#">Category 8</a>
                                     </div>
                                 </div>
                                 <!-- Red sa kategorijama -->
@@ -131,7 +131,7 @@
                                 <!-- Vidi sve  -->
                                 <div class="row">
                                     <div class="col-lg-12 col-sm-12 text-center">
-                                        <a href="../proizvodi/svi_proizvodi.html" style="color: powderblue;" > Vidi sve proizvode </a>
+                                        <a href="./proizvodi/svi_proizvodi.html" style="color: powderblue;" >   See all articles </a>
                                     </div>
                                 </div>
                                 <!-- Vidi sve  -->
@@ -143,30 +143,30 @@
 
 
                         </li>
-                        <!-- /Kategorije ( SHOP )-->
+                        <!-- /Categories ( SHOP )-->
 
-                        <!-- O nama -->
+                        <!-- About -->
                         <li class="nav-item">
-                            <a class="nav-link" href="../o_nama.html">O nama</a> 
+                            <a class="nav-link" href="./o_nama.html">About</a> 
                         </li>
 
-                        <!-- Kontakt -->
+                        <!-- Contact -->
                         <li class="nav-item">
-                            <a class="nav-link" href="../kontakt.html">Kontakt</a> 
+                            <a class="nav-link" href="./kontakt.html">Contact</a> 
                         </li>
 
 
                         <span class="ml-5"></span>
 
 
-                        <!-- Uloguj se -->
+                        <!-- Log in -->
                         <li class="nav-item">
                             
                             <!-- Form -->
                             <form action="#" method="POST">
                                 <span class="nav-link noBorder " type="button" 
                                 data-toggle="modal" data-target="#logInModal"
-                                >Uloguj se</span>
+                                >Log in</span>
 
 
                                 <!-- Modal -->
@@ -175,7 +175,7 @@
                                         <div class="modal-content">
                                             <div class="modal-header">
 
-                                                <h5 class="modal-title " id="exampleModalLongTitle">Prijavljivanje</h5>
+                                                <h5 class="modal-title " id="exampleModalLongTitle">Log in</h5>
 
 
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -187,11 +187,11 @@
                                                 <input type="email" class="form-control">
 
                                                 <!-- Obavestene  -->
-                                                    <span class="text-danger small" hidden >Neispravna email adresa!</span>
+                                                    <span class="text-danger small" hidden >Wrong email address!</span>
                                                 <!-- /Obavestene  -->
 
                                                 <br>
-                                                Lozinka
+                                                Password
                                                 <div class="d-flex">
                                                     <input type="password" class="form-control" id = "pass">
 
@@ -204,19 +204,19 @@
                                                 </div>
 
                                                 <!-- Obavestene  -->
-                                                    <span class="text-danger small" hidden>Neispravna lozinka!</span><br>
+                                                    <span class="text-danger small" hidden> Wrong password!</span><br>
                                                 <!-- /Obavestene  -->
 
-                                                <span class="mt-2 text-primary" style="cursor: pointer;">  Zaboravio/la sam lozinku...</span>
+                                                <span class="mt-2 text-primary" style="cursor: pointer;">  I forgot my password...</span>
                                             </div>
                                             <div class="modal-footer">
                                             
-                                            <button type="submit" class="btn btn-primary" style="width: 100%;">Prijavi se</button>
+                                            <button type="submit" class="btn btn-primary" style="width: 100%;"> Log in</button>
                                             
                                             </div>
                                             <div class="text-center mb-3">
                                                 <br>
-                                                Još nemate nalog <a href = "">Registrujte se!</a>
+                                              You don't have an account? <a href = "">Register</a>
                                             </div>
                                         </div>
                                         </div>
@@ -228,15 +228,15 @@
                             <!-- /Form -->
 
                         </li>
-                        <!-- /Uloguj se -->
+                        <!-- /Log in -->
 
 
 
 
 
-                        <!-- Registruj se -->
+                        <!-- Register -->
                         <li class="nav-item">
-                            <a href="../profil/registracija.html" class = "nav-link text-info" style="cursor: pointer;" > Registruj se</a>
+                            <a href="./profil/registracija.html" class = "nav-link text-info" style="cursor: pointer;" > Registration</a>
                         </li>
 
 
@@ -249,15 +249,13 @@
                     <!-- /Items -->
 
                 </div>
-                <!-- Ostali deo menija -->
+                <!-- /Card menu -->
 
-                  <!-- Button za responzivnost -->
-               
-                  <button class="navbar-toggler mr-3"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Responsive button -->
+                <button class="navbar-toggler mr-3"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon btn btn-sm " ></span>
                 </button>
-               
-                <!-- Button za responzivnost -->
+                <!-- /Responsive button -->
 
 
 
@@ -265,7 +263,7 @@
 
 
                 
-                    <!-- Profil -->
+                    <!-- Profile -->
                     <div class="dropdown">
 
                         <a class="noBorder text-dark" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">
@@ -274,45 +272,46 @@
 
 
                         <div class="dropdown-menu " aria-labelledby="dropdownMenuButton" style="margin-left: -105px; border-top:rgb(172, 172, 172) solid; box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.404);">
-                          <a class="dropdown-item" href="../profil/profil.html">Moj profil</a>
-                         
-                          <a class="dropdown-item text-danger" href="../odjaviSe">Odjavi se</a>
+                          <a class="dropdown-item" href="./profil/profil.html">My profile</a>
+                          <a class="dropdown-item" href="./admin_sekcija.html"><span class="h6 text-info">Admin Dashboard</span></a>
+                          <a class="dropdown-item text-danger" href="./odjaviSe">Log out</a>
                         </div>
                       </div>
-                    <!-- /Profil -->
+                    <!-- /Profile -->
 
-                    <div class="d-flex dropdown show">
+                    <!-- Cart menu -->
+                    <div class="d-flex dropdown show " >
 
-                        <!-- Korpa -->
-                            <!-- Klik -->
+                        <!-- Cart -->
+                            <!-- Icon -->
                                 <a class="fas fa-shopping-cart mt-3 text-success " id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ></a> 
-                            <!-- /Klik -->
+                            <!-- /Icon -->
                             
-                            <!-- Br predmeta u korpi -->
+                            <!-- Num of articles in cart -->
                             <span class="badge badge-dark" style="margin-left: 0px; border-radius: 50px; margin-left: -4px; margin-bottom: 30px;" > 
                                 3  
                             </span>
-                            <!-- /Br predmeta u korpi -->
+                            <!-- /Num of articles in cart -->
 
 
-                            <!-- Meni korpe  -->
-                            <div class="dropdown-menu korpa-menu" style="padding: 5px; margin-left: -220px; margin-top: -10px; position: absolute; width: 250px;" aria-labelledby="dropdownMenuLink">
+                            <!-- Cart body  -->
+                            <div class="dropdown-menu korpa-menu" style="padding: 15px; margin-left: -220px; margin-top: -10px; position: absolute; width: 250px;" aria-labelledby="dropdownMenuLink">
                                
-                                <!-- Ukupno predmeta -->
+                                <!-- Total cost -->
                                 <div class="row">
-                                    <div class="col-sm-6"> Ukupno : </div>
+                                    <div class="col-sm-6"> Total : </div>
                                     <div class="col-sm-6 "><span class="text-danger"> 6000 </span> RSD</div>
-                               </div>
-                               <hr style="margin-left: 10px; margin-right: 10px;">
-                                <!-- /Ukupno predmeta -->
+                                </div>
+                                <hr style="margin-left: 10px; margin-right: 10px;">
+                                <!-- /Total cost -->
                                
 
                                
                                         
-                                <!-- Izlistavanje predmeta -->
+                                <!-- Article 0-->
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <a href = '../proizvodi/proizvod.html' class="text-info">Proizvod</a>
+                                        <a href = './proizvodi/proizvod.html' class="text-info">Article 0</a>
                                     </div>
 
                                     <div class="col-sm-6">
@@ -320,16 +319,16 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <!-- /Izlistavanje predmeta -->
+                                <!-- /Articles list -->
 
 
 
 
 
-                                 <!-- Izlistavanje predmeta -->
-                                 <div class="row">
+                                <!-- Article 1 -->
+                                <div class="row">
                                     <div class="col-sm-6">
-                                        <a href = '' class="text-info">Duks</a>
+                                        <a href = '' class="text-info">Article 1</a>
                                     </div>
 
                                     <div class="col-sm-6">
@@ -337,50 +336,61 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <!-- /Izlistavanje predmeta -->
+                                <!-- /Article 1 -->
 
 
 
 
 
-                                 <!-- Izlistavanje predmeta -->
-                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <a href = '' class="text-info">Kapa</a>
-                                    </div>
+                                
 
-                                    <div class="col-sm-6">
-                                      <span>1200</span> <span class="text-secondary">RSD</span>
-                                    </div>
-                                </div>
-                                <hr>
-                                <!-- /Izlistavanje predmeta -->
-                            
-                            
-                                <!-- Prikazi korpu -->
-                                    <div class="d-flex justify-content-center">
-                                        <a href = "../korpa/mojaKorpa.html" class="btn btn-outline-success">Prikaži korpu</a>
-                                    </div>
-                                <!-- /Prikazi korpu -->
+                                    <!-- Cart action -->
+                                        <div class="d-flex justify-content-center">
+
+                                            <!-- Show cart -->
+                                            <div>
+                                                <a href = "./korpa/korpa.html" class="btn btn-outline-success">Show cart</a>
+                                            </div>
+
+                                            <!--  -->
+                                            <div>
+                                                <form action="" class="ml-3 ">
+                                                    <button class="btn btn-danger ">Purchase</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    <!-- /Cart action -->
 
 
-                            
+                                
+                                    
+
                             </div>
-                            <!-- /Meni korpe  -->
+                            <!-- /Cart body  -->
 
+
+
+
+
+                        
 
 
                     <!-- /Korpa -->
+
+                        
+
+
                     </div>
+                    <!-- Cart menu -->
+
                    
                 
               
 
             </div>
-            <!-- /Kontejner navigacije -->
+            <!-- /Nav container -->
         </nav>
         <!-- /Navigation -->
-
         
        <!-- Title -->
         <div class="container mt-5 mb-4">
